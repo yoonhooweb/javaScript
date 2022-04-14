@@ -1,0 +1,31 @@
+.mainWrap {width: 100%; height: 100%; position: relative;}
+
+/* 헤더영역 */
+
+.header{display: flex; justify-content: space-between; align-items: center; height: 60px;box-shadow: 2px 2px 2px rgb(172, 172, 172);}
+.header .logo {padding: 0px 30px}
+.header .menu {width: 60%;}
+.header .menu .gnb{display: table; width: 100%;}
+.header .menu .gnb .depth1 {display:table-cell; padding: 0px 20px; position: relative; line-height: 60px; /* background-color: blue; */}
+.header .menu .gnb .depth1 a{color: #333; font-size: 1.1rem; font-weight: bold; text-align: center; display: block;}
+.header .menu .gnb .depth2 {position: absolute; top: 60px; left: 0; width: 100%; z-index: 999; height: 0px; display: none; transition:all 0.5s ease; background-color: antiquewhite; }
+.header .menu .gnb.active .depth2 {display: block; height: 200px;  transition:all 0.5s ease; }
+.header .menu .gnb .depth2 li{ position: relative;   line-height: 40px;/*  background-color: blue; */}
+.header .menu .gnb.active .depth2 a {display: block; font-size: .8rem; /* background-color: red;  */}
+.header .menu .gnb::after {content: ''; position: absolute; top: 60px; left: 0px; width: 100%; height: 0px;/* background-color: aqua;  */}
+.header .menu .gnb.active::after {display: block; transition:all 0.5s ease; height: 200px;}
+.header .util ul {display: flex; align-items: center;}
+.header .util ul li{padding: 0px 10px; position: relative;}
+.header .util ul li .userArrow .rotate.active{transform: rotate(180deg); transition: all 0.5s ease;}
+.header .util ul li .userInfo {position: absolute; top: 60px; border-top: 2px solid #ddd; border-left: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; width: 200px; height: 200px; top:50px; right: 0px; cursor: auto; display: none;}
+.header .util ul li .userInfo .userName {display: inline-block; padding: 10px 2px 0px 10px; font-size: 1.1rem; font-weight:600;}
+.header .util ul li .userInfo .userdept {display: inline-block; padding: 10px 2px 0px 0px;}
+
+/* LEFT 영역*/
+.sideBar {width: 5%; height: calc(100% - 60px); float: left; box-shadow:4px 1px 2px rgb(172 172 172);}
+.sideBarTitle{display: block; height: 2.5rem; font-size:1.5rem; line-height: 2.5rem; text-align: center;}
+.sideBarMenu {display: block;} 
+.sideBarMenu li {display: block; width: 100%; padding-left:2rem; line-height: 1.6rem; height: 1.6rem;}
+
+/* CONTENTS영역 */
+.contentArea{float: left; width: calc(100% - 5%); height: calc(100% - 60px);}
