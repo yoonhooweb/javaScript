@@ -1,0 +1,6 @@
+/* listTable-1 */
+
+.table-list {display: flex; justify-content: center; align-items: center; width: 100%;}
+.table-list table thead tr th {border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; line-height: 40px; }
+.table-list table tbody tr{border-bottom: 1px solid #ddd;}
+.table-list table tbody tr td {text-align: center; line-height: 40px;}

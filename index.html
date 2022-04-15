@@ -7,9 +7,13 @@
     <title>스타일가이드</title>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="/css/webfonts.css">
+    <!-- <link rel="stylesheet" href="/css/webfonts.css"> -->
     <link rel="stylesheet" href="/css/xeicon.min.css">
     <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/table.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -101,18 +105,70 @@
         <aside class="sideBar">
             <h3 class="sideTitle">레프트 메뉴</h3>
             <ul class="sideBarMenu">
-                <li><a href="styleGuide.html">스타일가이드</a></li>
-                <li><a href="styleGuide.html">테이블</a></li>
-                <li><a href="styleGuide.html">버튼</a></li>
+                <li><a href="#">스타일가이드</a></li>
+                <li><a href="#">테이블</a></li>
+                <li><a href="#">버튼</a></li>
             </ul>
             <div class="sideBarBt">
                 <i class="xi-hamburger-back"></i>        
             </div>
         </aside>
         <section class="contentArea"> 
-            <span class="subTitle">
-                
-            </span>
+            <span class="subTitle">서브페이지 제목</span>
+            <div class="tab_area mt20">
+                <ul class="tabs">
+                    <li data-tab="tab-1" class="active">탭메뉴 1(테이블)</li>
+                    <li data-tab="tab-2">탭메뉴 2(버튼)</li>
+                    <li data-tab="tab-3">탭메뉴 3(게시판)</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents active mt20" id="tab-1">
+                <!-- 리스트 테이블 -->
+                <div class="table-list">
+                    <table>
+                        <colgroup>
+                            <col width="20%">
+                            <col width="20%">
+                            <col width="20%">
+                            <col width="20%">
+                            <col width="20%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>내용</th>
+                                <th>첨부파일</th>
+                                <th>작성자</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-contents" id="tab-2">
+                tab2
+            </div>
+            <div class="tab-contents" id="tab-3">
+                tab3
+            </div>
         </section>
     </div>
     
