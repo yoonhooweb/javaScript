@@ -21,6 +21,7 @@ $(document).ready(function(){
             $(this).find("i").addClass("xi-hamburger-back");
             $(this).find("i").removeClass("xi-hamburger-out");
             $(".sideBar").css("width", "200px").removeClass("active");
+            console.log("git Test");
         }
     })
 })
