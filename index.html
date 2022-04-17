@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="/css/xeicon.min.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/table.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -124,7 +124,7 @@
             </div>
 
             <div class="tab-contents active mt20" id="tab-1">
-                <!-- 리스트 테이블 -->
+                <!-- list table -->
                 <div class="table-list">
                     <table>
                         <colgroup>
@@ -161,6 +161,91 @@
                             
                         </tbody>
                     </table>
+                </div>
+                <div class="paging">
+                    <ul>
+                        <li class="active"><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                    </ul>
+                </div>
+                <!-- detail table -->
+                <div class="table-detail mt20">
+                    <table>
+                        <colgroup>
+                            <col width="*">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>제목</th>
+                                <td>안녕하세요</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- header fixed table -->
+                <div class="table-list-fixed mt30">
+                    <div class="tableHeader">
+                        <table>
+                            <colgroup>
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>내용</th>
+                                    <th>첨부파일</th>
+                                    <th>작성자</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="tableBody">
+                        <table>
+                            <colgroup>
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>번호</td>
+                                    <td>제목</td>
+                                    <td>내용</td>
+                                    <td>첨부파일</td>
+                                    <td>작성자</td>
+                                </tr>
+                                <tr>
+                                    <td>번호</td>
+                                    <td>제목</td>
+                                    <td>내용</td>
+                                    <td>첨부파일</td>
+                                    <td>작성자</td>
+                                </tr>
+                                <tr>
+                                    <td>번호</td>
+                                    <td>제목</td>
+                                    <td>내용</td>
+                                    <td>첨부파일</td>
+                                    <td>작성자</td>
+                                </tr>
+                                <tr>
+                                    <td>번호</td>
+                                    <td>제목</td>
+                                    <td>내용</td>
+                                    <td>첨부파일</td>
+                                    <td>작성자</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="tab-contents" id="tab-2">
