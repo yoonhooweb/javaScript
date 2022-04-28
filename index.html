@@ -7,24 +7,48 @@
     <title>스타일가이드</title>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="./css/common.css">
-    <!-- <link rel="stylesheet" href="/css/webfonts.css"> -->
+    <link rel="stylesheet" href="/css/webfonts.css">
     <link rel="stylesheet" href="/css/xeicon.min.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/table.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="mainWrap">
-        <header class="header">
-            <div class="logo">
-                <a href="./index.html" class="logoIcon">
-                    <img src="./img/logo.png">
-                </a>
+    <!-- <header class="header">
+        <div id="header_wrap">
+            <div class="nav_wrap">
+                <div class="identity">
+                    <a href=""><img src="./img/logo.png" alt=""></a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                    </ul>
+                </nav>
+                <div class="profile">
+                    <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                </div>
             </div>
-            <nav class="menu">
+        </div>
+    </div> -->
+    <div id="wrap">
+        <header class="header">
+            <div class="header-logo">
+                <a href="#" class="logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <div class="sideBarBt">
+                    <i class="xi-hamburger-back"></i>
+                </div>
+            </div>
+            <nav class="top-nav">
                 <ul class="gnb">
                     <li class="depth1">
                         <a href="#">MENU1</a>
@@ -69,10 +93,10 @@
                     <li class="pointer" onclick="arrowRotate();">
                         <span class="userArrow">
                             <img src="./img/user.png" alt="사용자 사진" id="userPic">
-                            <i class="xi-caret-down-min rotate"></i>
+                            <!-- <i class="xi-caret-down-min rotate"></i> -->
                         </span>
                         <div class="userInfo">
-                            <div class="user">
+                            <!-- <div class="user">
                                 <span class="userName">조윤후</span>
                                 <span class="userdept">선임</span>
                             </div>
@@ -80,14 +104,14 @@
                                 <span class="myPage">마이페이지</span>
                                 <span class=""></span>
                             </div>
-                            <button href="#" class="logout bsBt">LOGOUT</button>
+                            <button href="#" class="logout bsBt">LOGOUT</button> -->
                         </div>
                     </li>
-                    <!-- <li>
+                    <li>
                         <span class="searchIcon pointer">
                             <i class="xi-search"></i>
                         </span>
-                    </li> -->
+                    </li>
                     <li>
                         <a href="#" class="menuBt">
                             <i class="xi-bars"></i>
@@ -96,165 +120,214 @@
                     
                 </ul>
             </div>
-            <!-- <div class="searchArea">
-                <div class="searchInFrom">
-                    <input type="text" class="" value="" placeholder="검색어를 입력해주세요">
-                </div>
-            </div> -->
         </header>
-        <aside class="sideBar">
-            <h3 class="sideTitle">레프트 메뉴</h3>
-            <ul class="sideBarMenu">
-                <li><a href="#">스타일가이드</a></li>
-                <li><a href="#">테이블</a></li>
-                <li><a href="#">버튼</a></li>
-            </ul>
-            <div class="sideBarBt">
-                <i class="xi-hamburger-back"></i>        
-            </div>
-        </aside>
-        <section class="contentArea"> 
-            <span class="subTitle">서브페이지 제목</span>
-            <div class="tab_area mt20">
-                <ul class="tabs">
-                    <li data-tab="tab-1" class="active">탭메뉴 1(테이블)</li>
-                    <li data-tab="tab-2">탭메뉴 2(버튼)</li>
-                    <li data-tab="tab-3">탭메뉴 3(게시판)</li>
-                </ul>
-            </div>
-
-            <div class="tab-contents active mt20" id="tab-1">
-                <!-- list table -->
-                <div class="table-list">
-                    <table>
-                        <colgroup>
-                            <col width="20%">
-                            <col width="20%">
-                            <col width="20%">
-                            <col width="20%">
-                            <col width="20%">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>번호</th>
-                                <th>제목</th>
-                                <th>내용</th>
-                                <th>첨부파일</th>
-                                <th>작성자</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-                </div>
-                <div class="paging">
-                    <ul>
-                        <li class="active"><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
+        <main class="layout-wrap">
+            <aside class="sideBar">
+                <div class="sideNav">
+                    <ul class="sideMenu">
+                        <li class="depth1">
+                            <a href="">Menu1</a>
+                            <!-- <ul class="depth2">
+                                <li>SubMenu1</li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="">Menu1</a>
+                        </li>
+                        <li>
+                            <a href="">Menu1</a>
+                        </li>
                     </ul>
                 </div>
-                <!-- detail table -->
-                <div class="table-detail mt20">
-                    <table>
-                        <colgroup>
-                            <col width="*">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>제목</th>
-                                <td>안녕하세요</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- header fixed table -->
-                <div class="table-list-fixed mt30">
-                    <div class="tableHeader">
-                        <table>
-                            <colgroup>
-                                <col width="20%">
-                                <col width="20%">
-                                <col width="20%">
-                                <col width="20%">
-                                <col width="20%">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>번호</th>
-                                    <th>제목</th>
-                                    <th>내용</th>
-                                    <th>첨부파일</th>
-                                    <th>작성자</th>
-                                </tr>
-                            </thead>
-                        </table>
+            </aside>
+            <div class="layout-content">
+                <section class="contentArea"> 
+                    <div class="content-header">
+                        <h3><i class="xi-laravel"></i>SubPage Title</h3>
                     </div>
-                    <div class="tableBody">
-                        <table>
-                            <colgroup>
-                                <col width="20%">
-                                <col width="20%">
-                                <col width="20%">
-                                <col width="20%">
-                                <col width="20%">
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <td>번호</td>
-                                    <td>제목</td>
-                                    <td>내용</td>
-                                    <td>첨부파일</td>
-                                    <td>작성자</td>
-                                </tr>
-                                <tr>
-                                    <td>번호</td>
-                                    <td>제목</td>
-                                    <td>내용</td>
-                                    <td>첨부파일</td>
-                                    <td>작성자</td>
-                                </tr>
-                                <tr>
-                                    <td>번호</td>
-                                    <td>제목</td>
-                                    <td>내용</td>
-                                    <td>첨부파일</td>
-                                    <td>작성자</td>
-                                </tr>
-                                <tr>
-                                    <td>번호</td>
-                                    <td>제목</td>
-                                    <td>내용</td>
-                                    <td>첨부파일</td>
-                                    <td>작성자</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="tab_area mt20">
+                        <ul class="tabs">
+                            <li data-tab="tab-1" class="active">탭메뉴 1(테이블)</li>
+                            <li data-tab="tab-2">탭메뉴 2(아이콘)</li>
+                            <li data-tab="tab-3">탭메뉴 3(버튼)</li>
+                            <!-- <li data-tab="tab-4">탭메뉴 4(버튼모음)</li> -->
+                        </ul>
                     </div>
-                </div>
+
+                    <div class="tab-contents active mt20" id="tab-1">
+                        <div class="searchBox">
+                            <span class="searchName">검색어 : </span>
+                            <input type="text" class="form-control">
+                            <span class="searchName">선택 : </span>
+                            <select name="" id="" class="form-control">
+                                <option value="">test</option>
+                            </select>
+                            <button class="searchBt">검색</button>
+                        </div>
+                        <!-- header fixed table -->
+                        <div class="table-list-fixed mt10">
+                            <div class="tableHeader">
+                                <table>
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>번호</th>
+                                            <th>제목</th>
+                                            <th>내용</th>
+                                            <th>첨부파일</th>
+                                            <th>작성자</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="tableBody">
+                                <div class="scroll-bar">
+                                    <p id="sKnob" class="scroll-knob"></p>
+                                </div>
+                                <table>
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>번호</td>
+                                            <td>제목</td>
+                                            <td>내용</td>
+                                            <td>첨부파일</td>
+                                            <td>작성자</td>
+                                        </tr>
+                                        <tr>
+                                            <td>번호</td>
+                                            <td>제목</td>
+                                            <td>내용</td>
+                                            <td>첨부파일</td>
+                                            <td>작성자</td>
+                                        </tr>
+                                        <tr>
+                                            <td>번호</td>
+                                            <td>제목</td>
+                                            <td>내용</td>
+                                            <td>첨부파일</td>
+                                            <td>작성자</td>
+                                        </tr>
+                                        <tr>
+                                            <td>번호</td>
+                                            <td>제목</td>
+                                            <td>내용</td>
+                                            <td>첨부파일</td>
+                                            <td>작성자</td>
+                                        </tr>
+                                        <tr>
+                                            <td>번호</td>
+                                            <td>제목</td>
+                                            <td>내용</td>
+                                            <td>첨부파일</td>
+                                            <td>작성자</td>
+                                        </tr>
+                                        <tr>
+                                            <td>번호</td>
+                                            <td>제목</td>
+                                            <td>내용</td>
+                                            <td>첨부파일</td>
+                                            <td>작성자</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="btArea">
+                            <a href="#" class="addBt">등록</a>
+                        </div>
+                        <!-- list table -->
+                        <div class="table-list mt20">
+                            <table>
+                                <colgroup>
+                                    <col width="10%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>제목</th>
+                                        <th>내용</th>
+                                        <th>첨부파일</th>
+                                        <th>작성자</th>
+                                        <th>비고</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="#" class="tableBt">삭제</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="paging">
+                            <ul>
+                                <li class="active"><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                            </ul>
+                        </div>
+                        <!-- detail table -->
+                        <div class="table-detail mt20">
+                            <table>
+                                <colgroup>
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>제목</th>
+                                        <td>안녕하세요</td>
+                                    </tr>
+                                </tbody>
+                            </table>    
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="tab-2"> 
+                        <div class="chToggle">
+                            <input type="checkbox" class="checkBox" id="check">
+                            <label for="check" class="slider"></label>
+                        </div>
+                        <div class="card-area">
+                            
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="tab-3">
+                        
+                    </div>
+                </section>
             </div>
-            <div class="tab-contents" id="tab-2">
-                tab2
-            </div>
-            <div class="tab-contents" id="tab-3">
-                tab3
-            </div>
-        </section>
+        </main>
     </div>
     
     <script src="/js/common.js"></script>

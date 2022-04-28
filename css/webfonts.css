@@ -28,7 +28,7 @@
 @font-face {
 	font-family: 'Noto Sans KR';
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 500;
 	src: url(../font/NotoSans-Bold.eot) format('embedded-opentype'),
 		 url(../font/NotoSans-Bold.woff2) format('woff2'),
 		 url(../font/NotoSans-Bold.woff) format('woff');
@@ -37,7 +37,7 @@
 @font-face {
 	font-family: 'Noto Sans KR';
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 700;
 	src: url(../font/NotoSans-Bold.eot) format('embedded-opentype'),
 		 url(../font/NotoSans-Bold.woff2) format('woff2'),
 		 url(../font/NotoSans-Bold.woff) format('woff');

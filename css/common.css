@@ -6,6 +6,10 @@
 * {
     margin: 0;
     padding: 0;
+	box-sizing: border-box;
+}
+*, *::after, *::before {
+	box-sizing: border-box;
 }
 
 body,
@@ -61,6 +65,7 @@ pre {
 
 
 .w10{width:10%!important;}
+
 .w15{width:15%!important;}
 .w20{width:20%!important;}
 .w24{width:24%!important;}

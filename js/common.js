@@ -16,14 +16,14 @@ $(document).ready(function(){
         if ( $(this).find("i").hasClass("xi-hamburger-back") ) {
             $(this).find("i").removeClass("xi-hamburger-back");
             $(this).find("i").addClass("xi-hamburger-out");
-            $(".contentArea").css("width","calc(100% - 90px)");
-            $(".sideBar").css("width", "50px").addClass("active");
+            $(".sideBar").addClass("active");
+            $(".sideBarMenu li a").css("display","none");
+            $(".sideBarMenu li a").addClass("hidden");
         } else if ($(this).find("i").hasClass("xi-hamburger-out")) {
             $(this).find("i").addClass("xi-hamburger-back");
             $(this).find("i").removeClass("xi-hamburger-out");
             $(".sideBar").css("width", "200px").removeClass("active");
-            $(".contentArea").css("width","calc(100% - 240px)");
-            console.log("git Test");
+            $(".sideBarMenu li a").fadeIn(500);
         }
     })
 
@@ -34,12 +34,12 @@ $(document).ready(function(){
 
 		$(this).addClass('active');
 		$("#"+tab_id).addClass('active');
-        console.log(tab_id);
 	})
-})
+
+});
 
 function arrowRotate(){
-    let rotate = document.querySelector(".userArrow .rotate");
+    let rotate = document.querySelector(".userArrow");
     let userInfo = document.querySelector(".userInfo");
     rotate.classList.toggle("active");
     if (rotate.classList.contains("active")) {
