@@ -26,7 +26,7 @@
 .layout-wrap {display: flex;}
 
 /* fixed */ /* .layout-wrap .sideBar {flex-basis: 15rem; width: 15rem; height: calc(100vh - 3.5rem); background: #fff; box-shadow: .15rem 0 1.75rem 0 rgb(33 40 50 / 15%); flex-shrink: 1; transition: all .5s ease;} */
-.layout-wrap .sideBar {position: fixed; width: 15rem; height: 100vh; background: #fff; box-shadow: .15rem 0 1.75rem 0 rgb(33 40 50 / 15%); z-index: 888;}
+.layout-wrap .sideBar {position: fixed; width: 15rem; height: 100vh; background: #fff; box-shadow: .15rem 0 1.75rem 0 rgb(33 40 50 / 15%); z-index: 888; transition: all .5s ease;}
 .layout-wrap .sideBar.active {flex-basis:3rem; width:3rem; transition: all .5s ease; }
 /* fixed */ .layout-wrap .sideBar .sideNav {padding-top: 3.5rem;}
 .sideNav .sideMenu {flex-direction: column;}
@@ -38,7 +38,8 @@
 .sideNav .sideMenu li:nth-child(2)::before {content: '\e94d';}
 .sideNav .sideMenu li:nth-child(3)::before {content: '\e94d';}
 
-.layout-wrap .layout-content {position: relative; display: flex; flex-grow: 1; top: 3.5rem; padding-left: 15rem; min-height: calc(100vh - 3.5rem);  background:#f2f6fc;}
+.layout-wrap .layout-content {position: relative; display: flex; flex-grow: 1; top: 3.5rem; padding-left: 15rem; min-height: calc(100vh - 3.5rem);  background:#f2f6fc; transition: all .5s ease;}
+.layout-wrap .layout-content.active {padding-left:3rem;}
 /* fixed */ .layout-content .contentArea {width: 80%; margin: 0 auto;}
 /* .layout-content .contentArea {width: 80%; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem;} */
 .contentArea .content-header{padding: 3rem 0 1.5rem 0;}

@@ -17,12 +17,14 @@ $(document).ready(function(){
             $(this).find("i").removeClass("xi-hamburger-back");
             $(this).find("i").addClass("xi-hamburger-out");
             $(".sideBar").addClass("active");
+            $(".layout-wrap .layout-content").addClass("active");
             $(".sideBarMenu li a").css("display","none");
             $(".sideBarMenu li a").addClass("hidden");
         } else if ($(this).find("i").hasClass("xi-hamburger-out")) {
             $(this).find("i").addClass("xi-hamburger-back");
             $(this).find("i").removeClass("xi-hamburger-out");
-            $(".sideBar").css("width", "200px").removeClass("active");
+            $(".sideBar").removeClass("active");
+            $(".layout-wrap .layout-content").removeClass("active");
             $(".sideBarMenu li a").fadeIn(500);
         }
     })
