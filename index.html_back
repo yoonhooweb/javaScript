@@ -11,24 +11,44 @@
     <link rel="stylesheet" href="/css/xeicon.min.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/table.css">
-    <link rel="stylesheet" href="/css/button.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="mainWrap">
+    <!-- <header class="header">
+        <div id="header_wrap">
+            <div class="nav_wrap">
+                <div class="identity">
+                    <a href=""><img src="./img/logo.png" alt=""></a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                    </ul>
+                </nav>
+                <div class="profile">
+                    <li><a href="">test</a></li>
+                        <li><a href="">test</a></li>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div id="wrap">
         <header class="header">
-            <div class="logo">
-                <a href="./index.html" class="logoIcon">
-                    <img src="./img/logo.png">
+            <div class="header-logo">
+                <a href="#" class="logo">
+                    <img src="./img/logo.png" alt="">
                 </a>
+                <div class="sideBarBt">
+                    <i class="xi-hamburger-back"></i>
+                </div>
             </div>
-            <div class="sideBarBt">
-                <i class="xi-hamburger-back"></i>
-            </div>
-            <nav class="menu">
+            <nav class="top-nav">
                 <ul class="gnb">
                     <li class="depth1">
                         <a href="#">MENU1</a>
@@ -76,7 +96,7 @@
                             <!-- <i class="xi-caret-down-min rotate"></i> -->
                         </span>
                         <div class="userInfo">
-                            <div class="user">
+                            <!-- <div class="user">
                                 <span class="userName">조윤후</span>
                                 <span class="userdept">선임</span>
                             </div>
@@ -84,14 +104,14 @@
                                 <span class="myPage">마이페이지</span>
                                 <span class=""></span>
                             </div>
-                            <button href="#" class="logout bsBt">LOGOUT</button>
+                            <button href="#" class="logout bsBt">LOGOUT</button> -->
                         </div>
                     </li>
-                    <!-- <li>
+                    <li>
                         <span class="searchIcon pointer">
                             <i class="xi-search"></i>
                         </span>
-                    </li> -->
+                    </li>
                     <li>
                         <a href="#" class="menuBt">
                             <i class="xi-bars"></i>
@@ -100,29 +120,31 @@
                     
                 </ul>
             </div>
-            <!-- <div class="searchArea">
-                <div class="searchInFrom">
-                    <input type="text" class="" value="" placeholder="검색어를 입력해주세요">
-                </div>
-            </div> -->
         </header>
         <main class="layout-wrap">
             <aside class="sideBar">
                 <div class="sideNav">
-                    <!-- <h3 class="sideTitle">레프트 메뉴</h3> -->
-                    <ul class="sideBarMenu">
-                        <li><a href="#">SideMenu</a></li>
-                        <li><a href="#">SideMenu</a></li>
-                        <li><a href="#">SideMenu</a></li>
+                    <ul class="sideMenu">
+                        <li class="depth1">
+                            <a href="">Menu1</a>
+                            <!-- <ul class="depth2">
+                                <li>SubMenu1</li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="">Menu1</a>
+                        </li>
+                        <li>
+                            <a href="">Menu1</a>
+                        </li>
                     </ul>
-                   <!--  <div class="sideBarBt">
-                        <i class="xi-hamburger-back"></i>        
-                    </div> -->
                 </div>
             </aside>
             <div class="layout-content">
                 <section class="contentArea"> 
-                    <span class="subTitle">서브페이지 제목</span>
+                    <div class="content-header">
+                        <h3><i class="xi-laravel"></i>SubPage Title</h3>
+                    </div>
                     <div class="tab_area mt20">
                         <ul class="tabs">
                             <li data-tab="tab-1" class="active">탭메뉴 1(테이블)</li>
@@ -133,8 +155,17 @@
                     </div>
 
                     <div class="tab-contents active mt20" id="tab-1">
+                        <div class="searchBox">
+                            <span class="searchName">검색어 : </span>
+                            <input type="text" class="form-control">
+                            <span class="searchName">선택 : </span>
+                            <select name="" id="" class="form-control">
+                                <option value="">test</option>
+                            </select>
+                            <button class="searchBt">검색</button>
+                        </div>
                         <!-- header fixed table -->
-                        <div class="table-list-fixed mt30">
+                        <div class="table-list-fixed mt10">
                             <div class="tableHeader">
                                 <table>
                                     <colgroup>
@@ -156,9 +187,6 @@
                                 </table>
                             </div>
                             <div class="tableBody">
-                                <div class="scroll-bar">
-                                    <p id="sKnob" class="scroll-knob"></p>
-                                </div>
                                 <table>
                                     <colgroup>
                                         <col width="20%">
@@ -288,7 +316,7 @@
                             <label for="check" class="slider"></label>
                         </div>
                         <div class="card-area">
-                            
+                            asdasd
                         </div>
                     </div>
                     <div class="tab-contents" id="tab-3">

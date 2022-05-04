@@ -26,9 +26,9 @@
 .layout-wrap {display: flex;}
 
 /* fixed */ /* .layout-wrap .sideBar {flex-basis: 15rem; width: 15rem; height: calc(100vh - 3.5rem); background: #fff; box-shadow: .15rem 0 1.75rem 0 rgb(33 40 50 / 15%); flex-shrink: 1; transition: all .5s ease;} */
-.layout-wrap .sideBar {position: fixed; width: 15rem; height: 100vh; background: #fff; box-shadow: .15rem 0 1.75rem 0 rgb(33 40 50 / 15%); z-index: 888; transition: all .5s ease;}
+.layout-wrap .sideBar {position: fixed; display: flex; width: 14.3rem; height: 100vh; background: #fff; box-shadow: .15rem 0 1.75rem 0 rgb(33 40 50 / 15%); z-index: 888; transition: all .5s ease;}
 .layout-wrap .sideBar.active {flex-basis:3rem; width:3rem; transition: all .5s ease; }
-/* fixed */ .layout-wrap .sideBar .sideNav {padding-top: 3.5rem;}
+/* fixed */ .layout-wrap .sideBar .sideNav {padding-top: 3.5rem; width: 100%;}
 .sideNav .sideMenu {flex-direction: column;}
 .sideNav .sideMenu li {position: relative; padding: 0.7rem 0.7rem 0.7rem 2.2rem;}
 .sideNav .sideMenu li a {display: block; font-size: 0.9rem; font-weight: 200; color: #212832;}
@@ -38,23 +38,28 @@
 .sideNav .sideMenu li:nth-child(2)::before {content: '\e94d';}
 .sideNav .sideMenu li:nth-child(3)::before {content: '\e94d';}
 
-.layout-wrap .layout-content {position: relative; display: flex; flex-grow: 1; top: 3.5rem; padding-left: 15rem; min-height: calc(100vh - 3.5rem);  background:#f2f6fc; transition: all .5s ease;}
+.layout-wrap .layout-content {position: relative; display: flex; flex-grow: 1; top: 3.5rem; padding-left: 14.3rem; min-height: calc(100vh - 3.5rem);  background:#f2f6fc; transition: all .5s ease;}
+.layout-wrap .layout-content::before{content:''; position: absolute; top: 0px; left: 0px; width: 100%; height: 60px; /* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */ background-color: #5c5c5c;}
 .layout-wrap .layout-content.active {padding-left:3rem;}
-/* fixed */ .layout-content .contentArea {width: 80%; margin: 0 auto;}
-/* .layout-content .contentArea {width: 80%; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem;} */
-.contentArea .content-header{padding: 3rem 0 1.5rem 0;}
-.contentArea .content-header h3 {font-size: 2rem; display: flex;}
-.contentArea .content-header h3 .xi-laravel {margin-right: 1rem; line-height: 40px;}
+/* fixed */ .layout-content .contentArea {width: 100%; margin: 0 auto; position: relative; padding: 0 1rem;}
+/* .layout-content .contentArea {width: 80%; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; position:relative;} */
+.contentArea .content-header{padding: 0.9rem 0 0.9rem 0; display: flex; justify-content: space-between;}
+.contentArea .content-header h3 {font-size: 1.5rem; display: flex; color: #fff;}
+.contentArea .content-header h3 i {margin-right: .5rem; line-height: 30px;}
+.contentArea .contents {padding-top: 1rem; width: 70%; margin:0 auto;}
+.contents .dataArea {display: flex;}
+.contents .dataArea ul{ display: flex; flex-wrap: wrap; justify-content: space-between;}
+.contents .dataArea li{display: inline-block; margin-top: 10px;}
+.contents .dataArea li{display: inline-block; margin-top: 10px;}
 /* container END */
 
 /* headerFixed sideBarFixed */
 
 
-
-
-
 @media screen and (max-width:1024px){
-    
+    .header .top-nav {
+        display: none;
+    }
 }
 
 @media screen and (min-width:1px) and (max-width:768px){

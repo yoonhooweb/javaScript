@@ -15,29 +15,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- <header class="header">
-        <div id="header_wrap">
-            <div class="nav_wrap">
-                <div class="identity">
-                    <a href=""><img src="./img/logo.png" alt=""></a>
-                </div>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="">test</a></li>
-                        <li><a href="">test</a></li>
-                        <li><a href="">test</a></li>
-                        <li><a href="">test</a></li>
-                        <li><a href="">test</a></li>
-                        <li><a href="">test</a></li>
-                    </ul>
-                </nav>
-                <div class="profile">
-                    <li><a href="">test</a></li>
-                        <li><a href="">test</a></li>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div id="wrap">
         <header class="header">
             <div class="header-logo">
@@ -141,189 +118,50 @@
                 </div>
             </aside>
             <div class="layout-content">
-                <section class="contentArea"> 
-                    <div class="content-header">
-                        <h3><i class="xi-laravel"></i>SubPage Title</h3>
-                    </div>
-                    <div class="tab_area mt20">
-                        <ul class="tabs">
-                            <li data-tab="tab-1" class="active">탭메뉴 1(테이블)</li>
-                            <li data-tab="tab-2">탭메뉴 2(아이콘)</li>
-                            <li data-tab="tab-3">탭메뉴 3(버튼)</li>
-                            <!-- <li data-tab="tab-4">탭메뉴 4(버튼모음)</li> -->
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents active mt20" id="tab-1">
-                        <div class="searchBox">
-                            <span class="searchName">검색어 : </span>
-                            <input type="text" class="form-control">
-                            <span class="searchName">선택 : </span>
-                            <select name="" id="" class="form-control">
-                                <option value="">test</option>
-                            </select>
-                            <button class="searchBt">검색</button>
+                <section class="contentArea">
+                    <header class="content-header">
+                        <h3 class="subTitle">
+                            <i class="xi-emoticon-neutral-o"></i>
+                            SubPage Title
+                        </h3>
+                        <div class="header-button">
+                            <a href="#">Button</a>
+                            <a href="#">Button</a>
+                            <a href="#">Button</a>
                         </div>
-                        <!-- header fixed table -->
-                        <div class="table-list-fixed mt10">
-                            <div class="tableHeader">
-                                <table>
-                                    <colgroup>
-                                        <col width="20%">
-                                        <col width="20%">
-                                        <col width="20%">
-                                        <col width="20%">
-                                        <col width="20%">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>번호</th>
-                                            <th>제목</th>
-                                            <th>내용</th>
-                                            <th>첨부파일</th>
-                                            <th>작성자</th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </div>
-                            <div class="tableBody">
-                                <div class="scroll-bar">
-                                    <p id="sKnob" class="scroll-knob"></p>
-                                </div>
-                                <table>
-                                    <colgroup>
-                                        <col width="20%">
-                                        <col width="20%">
-                                        <col width="20%">
-                                        <col width="20%">
-                                        <col width="20%">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <td>번호</td>
-                                            <td>제목</td>
-                                            <td>내용</td>
-                                            <td>첨부파일</td>
-                                            <td>작성자</td>
-                                        </tr>
-                                        <tr>
-                                            <td>번호</td>
-                                            <td>제목</td>
-                                            <td>내용</td>
-                                            <td>첨부파일</td>
-                                            <td>작성자</td>
-                                        </tr>
-                                        <tr>
-                                            <td>번호</td>
-                                            <td>제목</td>
-                                            <td>내용</td>
-                                            <td>첨부파일</td>
-                                            <td>작성자</td>
-                                        </tr>
-                                        <tr>
-                                            <td>번호</td>
-                                            <td>제목</td>
-                                            <td>내용</td>
-                                            <td>첨부파일</td>
-                                            <td>작성자</td>
-                                        </tr>
-                                        <tr>
-                                            <td>번호</td>
-                                            <td>제목</td>
-                                            <td>내용</td>
-                                            <td>첨부파일</td>
-                                            <td>작성자</td>
-                                        </tr>
-                                        <tr>
-                                            <td>번호</td>
-                                            <td>제목</td>
-                                            <td>내용</td>
-                                            <td>첨부파일</td>
-                                            <td>작성자</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="btArea">
-                            <a href="#" class="addBt">등록</a>
-                        </div>
-                        <!-- list table -->
-                        <div class="table-list mt20">
-                            <table>
-                                <colgroup>
-                                    <col width="10%">
-                                    <col width="20%">
-                                    <col width="20%">
-                                    <col width="20%">
-                                    <col width="20%">
-                                    <col width="20%">
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th>번호</th>
-                                        <th>제목</th>
-                                        <th>내용</th>
-                                        <th>첨부파일</th>
-                                        <th>작성자</th>
-                                        <th>비고</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>5</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>5</td>
-                                        <td>
-                                            <a href="#" class="tableBt">삭제</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="paging">
+                    </header>
+                    <div class="contents">
+                        <div class="dataArea">
                             <ul>
-                                <li class="active"><a href="">1</a></li>
-                                <li><a href="">2</a></li>
-                                <li><a href="">3</a></li>
+                                <li>
+                                    <span class="searchName">연계 : </span><input type="text" class="form-control">
+                                </li>
+                                <li>
+                                    <span class="searchName">연계 : </span><input type="text" class="form-control">
+                                </li>
+                                <li>
+                                    <span class="searchName">연계 : </span><input type="text" class="form-control">
+                                </li>
+                                <li>
+                                    <span class="searchName">연계 : </span><input type="text" class="form-control">
+                                </li>
+                                <li>
+                                    <span class="searchName">연계 : </span><input type="text" class="form-control">
+                                </li>
+                                <li>
+                                    <span class="searchName">연계 : </span><input type="text" class="form-control">
+                                </li>
+                                <li>
+                                    <span class="searchName">연계 : </span><input type="text" class="form-control">
+                                </li>
+                                <li>
+                                    <span class="searchName">연계 : </span><input type="text" class="form-control">
+                                </li>
+                                <li>
+                                    <span class="searchName">연계 : </span><textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                                </li>
                             </ul>
                         </div>
-                        <!-- detail table -->
-                        <div class="table-detail mt20">
-                            <table>
-                                <colgroup>
-                                    <col width="*">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <th>제목</th>
-                                        <td>안녕하세요</td>
-                                    </tr>
-                                </tbody>
-                            </table>    
-                        </div>
-                    </div>
-                    <div class="tab-contents" id="tab-2"> 
-                        <div class="chToggle">
-                            <input type="checkbox" class="checkBox" id="check">
-                            <label for="check" class="slider"></label>
-                        </div>
-                        <div class="card-area">
-                            
-                        </div>
-                    </div>
-                    <div class="tab-contents" id="tab-3">
-                        
                     </div>
                 </section>
             </div>
