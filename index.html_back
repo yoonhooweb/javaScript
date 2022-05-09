@@ -92,7 +92,7 @@
                 <ul>
                     <li class="pointer" onclick="arrowRotate();">
                         <span class="userArrow">
-                            <img src="./img/user.png" alt="사용자 사진" id="userPic">
+                            <img src="./img/profile-1.png" alt="사용자 사진" id="userPic">
                             <!-- <i class="xi-caret-down-min rotate"></i> -->
                         </span>
                         <div class="userInfo">

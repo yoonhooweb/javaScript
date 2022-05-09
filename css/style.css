@@ -22,7 +22,8 @@
 .searchBox {display: flex; align-items: center; justify-content: flex-end;}
 .searchName { font-size: 1.1rem; font-weight: 300; margin: 0px 10px;}
 .form-control {border: 1px solid #ddd; outline: none; font-size: 1.2rem; padding:2px 10px; border-radius: 5px; background: #fff;}
-.searchBt { padding:5px 10px 5px 25px; background-color: #0774e5; color: #fff; position: relative; border-radius: 5px; margin-left: 5px;}
+.searchBt { padding:5px 10px 5px 25px; background-color: #0774e5; color: #fff; position: relative; border-radius: 5px; margin-left: 5px; transition: all .3s ease;}
+.searchBt:hover { background: #0774e5;}
 .searchBt::before {position: absolute; top: 50%; left: 5px; transform: translateY(-50%); content: '\e97a'; font-family: 'xeicon';}  
 
 /* Subpage Hedaer BT */
