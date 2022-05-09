@@ -6,19 +6,23 @@
 .header .header-logo .sideBarBt {display: flex; width: 3rem; font-size: 24px; cursor: pointer; z-index: 999; align-items: flex-start; justify-content: center;}
 .header .top-nav {display: flex; width: 70%; box-sizing: border-box;}
 .header .top-nav .gnb {display: table; width: 100%;}
-.header .top-nav .gnb .depth1{ display: table-cell; position: relative;}
+.header .top-nav .gnb .depth1{ display: table-cell; position: relative; text-align: center;}
 .header .top-nav .gnb .depth1 a {display: block; padding: 1.1rem 0rem; font-size: 1.1rem; font-weight: 500; color: #333;}
 .header .top-nav .gnb .depth2 { display: block; position: absolute; top: 3.5rem; left: 0; width: 100%; z-index: 999; height: 0px; transition:all 0.5s ease; background-color:#fff }
 .header .top-nav .gnb.active .depth2 {display: block; height: 200px;  transition:all 0.5s ease; }
-.header .top-nav .gnb .depth2 li{ position: relative;}
-.header .top-nav .gnb .depth2 a {display: none; padding: 0.7rem 0rem;  font-size: .8rem; font-weight: 500; color: #333;}
+.header .top-nav .gnb .depth2 li{ position: relative; text-align: left;}
+.header .top-nav .gnb .depth2 li:hover{ position: relative; background-color: #eaeaea;}
+.header .top-nav .gnb .depth2 a {display: none; padding: 0.7rem 0rem;  font-size: .8rem; font-weight: 500; color: #333; word-break: break-all;}
 .header .top-nav .gnb.active .depth2 a {display: block;}
-.header .top-nav .gnb::after {content: ''; position: absolute; top: 3.5rem; left: 0px; width: 100%; height: 0px;background-color: aqua; transition: all .5s ease; z-index: 888;}
+.header .top-nav .gnb::after {content: ''; position: absolute; top: 3.5rem; left: 0px; width: 100%; height: 0px;background-color: #0774e5; transition: all .5s ease; z-index: 888;}
 .header .top-nav .gnb.active::after {display: block; transition:all 0.5s ease; height: 200px;}
 .header .util {display: flex; padding-right: 1rem;}
 .header .util ul {display: flex; align-items: center; justify-items: center;}
-.header .util ul li{padding-left: 10px;}
-.header .util ul li .menuBt{ font-size: 24px;}
+.header .util ul li{margin-right: 1rem;}
+.header .util ul li .userArrow {display: block; width: 40px; height: 40px;}
+.header .util ul li .userArrow img{width: 100%; border-radius: 50%;}
+.header .util ul li .searchIcon{font-size: 1.4rem;}
+.header .util ul li .menuBt{ font-size: 24px; color: #333;}
 /* header END */
 
 
@@ -26,7 +30,7 @@
 .layout-wrap {display: flex;}
 
 /* fixed */ /* .layout-wrap .sideBar {flex-basis: 15rem; width: 15rem; height: calc(100vh - 3.5rem); background: #fff; box-shadow: .15rem 0 1.75rem 0 rgb(33 40 50 / 15%); flex-shrink: 1; transition: all .5s ease;} */
-.layout-wrap .sideBar {position: fixed; display: flex; width: 14.3rem; height: 100vh; background: #fff; box-shadow: .15rem 0 1.75rem 0 rgb(33 40 50 / 15%); z-index: 888; transition: all .5s ease;}
+.layout-wrap .sideBar {position: fixed; display: flex; width: 15rem; height: 100vh; background: #fff; box-shadow: .15rem 0 1.75rem 0 rgb(33 40 50 / 15%); z-index: 888; transition: all .5s ease;}
 .layout-wrap .sideBar.active {flex-basis:3rem; width:3rem; transition: all .5s ease; }
 /* fixed */ .layout-wrap .sideBar .sideNav {padding-top: 3.5rem; width: 100%;}
 .sideNav .sideMenu {flex-direction: column;}
@@ -38,30 +42,38 @@
 .sideNav .sideMenu li:nth-child(2)::before {content: '\e94d';}
 .sideNav .sideMenu li:nth-child(3)::before {content: '\e94d';}
 
-.layout-wrap .layout-content {position: relative; display: flex; flex-grow: 1; top: 3.5rem; padding-left: 14.3rem; min-height: calc(100vh - 3.5rem);  background:#f2f6fc; transition: all .5s ease;}
-.layout-wrap .layout-content::before{content:''; position: absolute; top: 0px; left: 0px; width: 100%; height: 60px; /* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */ background-color: #5c5c5c;}
+.layout-wrap .layout-content {position: relative; display: flex; flex-grow: 1; top: 3.5rem; padding-left: 15rem; min-height: calc(100vh - 3.5rem);  background:#f2f6fc; transition: all .5s ease;}
+.layout-wrap .layout-content::before{content:''; position: absolute; top: 0px; left: 0px; width: 100%; height: 60px; /* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */ background-color: #0774e5;}
 .layout-wrap .layout-content.active {padding-left:3rem;}
 /* fixed */ .layout-content .contentArea {width: 100%; margin: 0 auto; position: relative; padding: 0 1rem;}
 /* .layout-content .contentArea {width: 80%; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; position:relative;} */
 .contentArea .content-header{padding: 0.9rem 0 0.9rem 0; display: flex; justify-content: space-between;}
 .contentArea .content-header h3 {font-size: 1.5rem; display: flex; color: #fff;}
 .contentArea .content-header h3 i {margin-right: .5rem; line-height: 30px;}
-.contentArea .contents {padding-top: 1rem; width: 70%; margin:0 auto;}
+.contentArea .contents {padding-top: 1rem; width: 80%; margin:0 auto;}
 .contents .dataArea {display: flex;}
 .contents .dataArea ul{ display: flex; flex-wrap: wrap; justify-content: space-between;}
 .contents .dataArea li{display: inline-block; margin-top: 10px;}
 .contents .dataArea li{display: inline-block; margin-top: 10px;}
+
+.contents .cardArea { border: 1px solid #ddd; max-height: 250px; display: flex; }
 /* container END */
 
-/* headerFixed sideBarFixed */
+/* headerFixed sideBarFixed */ 
 
 
 @media screen and (max-width:1024px){
     .header .top-nav {
         display: none;
     }
+
+    .header .header-logo .sideBarBt {
+        display: none;
+    }
 }
 
 @media screen and (min-width:1px) and (max-width:768px){
-    
+    .layout-wrap .sideBar {display: none;}
+    .layout-wrap .sideBar.open { right: 0; display: block; width: 100%;}
+    .layout-wrap .layout-content {padding-left: 0px;}
 }
