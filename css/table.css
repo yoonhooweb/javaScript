@@ -17,7 +17,7 @@
 .table-list-fixed { border-radius: 5px; box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%); position: relative; padding-top: 50px; overflow: hidden; }
 .table-list-fixed .tableHeader {width: 100%; position: absolute; top: 0; left: 0;}
 .table-list-fixed .tableHeader table thead tr th{/* background: #6c7ae0; */ background-color: #0774e5; font-size: 18px; color: #fff; padding: 14px 0px 14px 0px;}
-.table-list-fixed .tableBody {width: 100%; max-height: 200px; overflow: auto; position: relative; -ms-overflow-style: none;}
+.table-list-fixed .tableBody {width: 100%; max-height: 350px; overflow: auto; position: relative; -ms-overflow-style: none;}
 .table-list-fixed .tableBody::-webkit-scrollbar {display: none;}
 .table-list-fixed .tableBody table tbody tr:nth-child(even) {background-color: #f8f6ff;}
 .table-list-fixed .tableBody table tbody tr td {padding: 12px 0 12px 0; text-align: center; font-weight: 200;}

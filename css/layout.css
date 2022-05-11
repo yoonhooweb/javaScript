@@ -14,7 +14,7 @@
 .header .top-nav .gnb .depth2 li:hover{ position: relative; background-color: #eaeaea;}
 .header .top-nav .gnb .depth2 a {display: none; padding: 0.7rem 0rem;  font-size: .8rem; font-weight: 500; color: #333; word-break: break-all;}
 .header .top-nav .gnb.active .depth2 a {display: block;}
-.header .top-nav .gnb::after {content: ''; position: absolute; top: 3.5rem; left: 0px; width: 100%; height: 0px;background-color: #0774e5; transition: all .5s ease; z-index: 888;}
+.header .top-nav .gnb::after {content: ''; position: absolute; top: 3.5rem; left: 0px; width: 100%; height: 0px;background-color: #fff; transition: all .5s ease; z-index: 888;}
 .header .top-nav .gnb.active::after {display: block; transition:all 0.5s ease; height: 200px;}
 .header .util {display: flex; padding-right: 1rem;}
 .header .util ul {display: flex; align-items: center; justify-items: center;}
@@ -52,11 +52,15 @@
 .contentArea .content-header h3 i {margin-right: .5rem; line-height: 30px;}
 .contentArea .contents {padding-top: 1rem; width: 80%; margin:0 auto;}
 .contents .dataArea {display: flex;}
-.contents .dataArea ul{ display: flex; flex-wrap: wrap; justify-content: space-between;}
-.contents .dataArea li{display: inline-block; margin-top: 10px;}
-.contents .dataArea li{display: inline-block; margin-top: 10px;}
+.contents .dataArea ul{ display: flex; flex-wrap: wrap;}
+.contents .dataArea li{display: inline-block; margin-top: 10px; width: 25%;}
 
-.contents .cardArea { border: 1px solid #ddd; max-height: 250px; display: flex; }
+
+.contents .cardArea{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.contents .cardArea .card{ width: 33%; border-radius: 10px; flex-direction: row; margin: 10px 0px; background-color: #fff;}
+.contents .cardArea .card .card-header{ background-color: #0774e5; width: 100%; color: #fff; padding: 1rem; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.contents .card .card-body { padding: 1rem; color: #333; font-weight: 200; }
+
 /* container END */
 
 /* headerFixed sideBarFixed */ 
