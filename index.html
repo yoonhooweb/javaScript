@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/table.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -132,6 +133,7 @@
                         </div>
                     </header>
                     <div class="contents">
+                        <!-- input 영역 -->
                         <div class="dataArea">
                             <ul>
                                 <li>
@@ -161,6 +163,8 @@
                                 </li>
                             </ul>
                         </div>
+                        <!-- input 영역 -->
+                        <!-- 테이블 -->
                         <div class="tableArea mt20">
                             <div class="searchBox">
                                 <span class="searchName">검색어</span>
@@ -250,43 +254,106 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 테이블 끝-->
+                        <!-- 카드모양 -->
                         <div class="cardArea mt20">
                             <div class="card mw33">
-                                <h4 class="card-header">포틀렛 이름쓰는곳</h4>
+                                <h4 class="card-header">포틀릿 이름쓰는곳</h4>
                                 <div class="card-body">
                                     Browse our fully designed UI toolkit! Browse our prebuilt app pages, components, and utilites, and be sure to look at our full documentation!
                                 </div>
                             </div>
                             <div class="card mw33">
-                                <h4 class="card-header">포틀렛 이름쓰는곳</h4>
+                                <h4 class="card-header">포틀릿 이름쓰는곳</h4>
                                 <div class="card-body">
                                     Browse our fully designed UI toolkit! Browse our prebuilt app pages, components, and utilites, and be sure to look at our full documentation!
                                 </div>
                             </div>
                             <div class="card mw33">
-                                <h4 class="card-header">포틀렛 이름쓰는곳</h4>
+                                <h4 class="card-header">포틀릿 이름쓰는곳</h4>
                                 <div class="card-body">
                                     Browse our fully designed UI toolkit! Browse our prebuilt app pages, components, and utilites, and be sure to look at our full documentation!
                                 </div>
                             </div>
                             <div class="card mw33">
-                                <h4 class="card-header">포틀렛 이름쓰는곳</h4>
+                                <h4 class="card-header">포틀릿 이름쓰는곳</h4>
                                 <div class="card-body">
                                     Browse our fully designed UI toolkit! Browse our prebuilt app pages, components, and utilites, and be sure to look at our full documentation!
                                 </div>
                             </div>
                             <div class="card mw33">
-                                <h4 class="card-header">포틀렛 이름쓰는곳</h4>
+                                <h4 class="card-header">포틀릿 이름쓰는곳</h4>
                                 <div class="card-body">
                                     Browse our fully designed UI toolkit! Browse our prebuilt app pages, components, and utilites, and be sure to look at our full documentation!
                                 </div>
                             </div>
                             <div class="card mw33">
-                                <h4 class="card-header">포틀렛 이름쓰는곳</h4>
+                                <h4 class="card-header">포틀릿 이름쓰는곳</h4>
                                 <div class="card-body">
                                     Browse our fully designed UI toolkit! Browse our prebuilt app pages, components, and utilites, and be sure to look at our full documentation!
                                 </div>
                             </div>
+                        </div>
+                        <!-- 카드모양 끝-->
+                        <div id="modal" class="modal">
+                            <h3 class="modal-header">
+                                <span class="modal-title">Modal-Title</span>
+                                <button class="modal-close">
+                                    <i class="xi-close"></i>
+                                </button>
+                            </h3>
+                            <ul class="tree">
+                                <li>
+                                  <input type="checkbox" id="root">
+                                  <label for="root">ROOT</label>
+                                  <ul>
+                                    <li>
+                                      <input type="checkbox" id="node1">
+                                      <label for="node1" class="lastTree">node1</label>
+                                    </li>
+                                    <li>
+                                      <input type="checkbox" id="node2">
+                                      <label for="node2">node2</label>
+                                      <ul>
+                                        <li>
+                                          <input type="checkbox" id="node21">
+                                          <label for="node21" class="lastTree">node21</label>
+                                        </li>
+                                      </ul>
+                                    <li>
+                                      <input type="checkbox" id="node3">
+                                      <label for="node3">node3</label>
+                                      <ul>
+                                        <li>
+                                          <input type="checkbox" id="node31">
+                                          <label for="node31" class="lastTree">node31</label>
+                                        </li>
+                                        <li>
+                                          <input type="checkbox" id="node32">
+                                          <label for="node32">node32</label>
+                                          <ul>
+                                            <li>
+                                              <input type="checkbox" id="node321">
+                                              <label for="node321" class="lastTree">node321</label>
+                                            </li>
+                                            <li>
+                                              <input type="checkbox" id="node322">
+                                              <label for="node322" class="lastTree">node322</label>
+                                            </li>
+                                            <li>
+                                              <input type="checkbox" id="node323">
+                                              <label for="node323" class="lastTree">node323</label>
+                                            </li>
+                                          </ul>
+                                        <li>
+                                          <input type="checkbox" id="node33">
+                                          <label for="node33" class="lastTree">node33</label>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
                         </div>
                     </div>
                 </section>
