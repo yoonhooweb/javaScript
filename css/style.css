@@ -32,11 +32,14 @@
 
 
 /* tree */
-.tree{margin-top: 5px;}
-.tree, .tree ul{padding-left:10px;}
+.tree{margin-top: 20px;}
+.tree input[type="checkbox"] {display: none;}
+.tree label {cursor: pointer; font-size: 12px; color: #333; font-weight: 200;}
+.tree label:hover {color: #0774e5;}
+/* .tree, .tree ul{padding-left:10px;}
 .tree *:before{width:15px; height:15px; display:inline-block; }
-.tree label{ cursor: pointer;font-size: 14px; color: #0055CC; }
-.tree label:hover{ color: #00AACC;}
+.tree label{ cursor: pointer;font-size: 14px; color: #333; }
+.tree label:hover{ color: #333;}
 .tree label:before{content: '+'}
 .tree label.lastTree:before{content:'o';}
 .tree label:hover:before{content: '+'}
@@ -46,4 +49,4 @@
 .tree input[type="checkbox"]:checked+label:before{ content: '-'}
 .tree input[type="checkbox"]:checked+label:hover:before{ content: '-' }
 .tree input[type="checkbox"]:checked+label.lastTree:before{content: 'o';}
-.tree input[type="checkbox"]:checked+label.lastTree:hover:before{content: 'o';}
+.tree input[type="checkbox"]:checked+label.lastTree:hover:before{content: 'o';} */
