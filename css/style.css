@@ -32,10 +32,15 @@
 
 
 /* tree */
-.tree{margin-top: 20px;}
+.tree{margin-top: 20px; max-height: 400px; overflow: auto;}
+.tree ul { padding: 10px;}
+.tree .depth1 li {position: relative; padding-left: 20px; line-height: 30px;}
+.tree .depth2 li::before {position: absolute; top: 0%; left: 0px; font-family: 'xeicon'; content: ''; /* transform: translateY(-50%) */;}
+.tree .depth2 li::before {content: '\e93f';}
 .tree input[type="checkbox"] {display: none;}
 .tree label {cursor: pointer; font-size: 12px; color: #333; font-weight: 200;}
 .tree label:hover {color: #0774e5;}
+
 /* .tree, .tree ul{padding-left:10px;}
 .tree *:before{width:15px; height:15px; display:inline-block; }
 .tree label{ cursor: pointer;font-size: 14px; color: #333; }

@@ -165,3 +165,7 @@ pre {
 .clear{clear: both;}
 .emp-red{color:red;}
 .bsBt { padding: 5px; font-size: 10px; color: #fff; background-color: #107ccf; border-radius: 5px;}
+
+.flex {flex: 1; max-width: 100%;}
+.double-flex {flex: 1; max-width: 50%;}
+.three-flex {flex:1; max-width: 33%;}

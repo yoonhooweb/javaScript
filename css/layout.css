@@ -61,6 +61,9 @@
 .contents .cardArea .card .card-header{ background-color: #0774e5; width: 100%; color: #fff; padding: 1rem; border-top-left-radius: 10px; border-top-right-radius: 10px;}
 .contents .card .card-body { padding: 1rem; color: #333; font-weight: 200; }
 
+
+.row {display: flex; justify-content: space-between;}
+.row .div {border: 1px solid black; height: 200px;}
 /* container END */
 
 /* headerFixed sideBarFixed */ 

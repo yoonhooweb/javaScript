@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    aa();
     let menuCheckli = $(".gnb .depth1");
     let menuCheck = $(".gnb")
     $(menuCheckli).bind({"mouseover" : function(){
@@ -51,4 +52,13 @@ function arrowRotate(){
         userInfo.style.height = "0px";
         userInfo.style.display = "none";
     }
+}
+
+
+function aa(){
+    let modal = document.querySelector("#modal");
+    let close = document.querySelector(".modal-close");
+    close.addEventListener("click",function(){
+        modal.style.display = "none";
+    })
 }
