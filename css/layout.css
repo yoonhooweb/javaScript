@@ -30,4 +30,4 @@
 #container .side-menu ul li a.active {background: linear-gradient(195deg,#ec407a,#d81b60);}
 #container .side-menu ul li a:hover {background-color: #42424a;}
 #container .side-menu ul li a i {font-size: 1.1rem; margin-right: 5px;;}
-#container .contents {display: flex; width: 100%; flex-basis: 90%; background-color: #fff; padding-left: 15.625rem; height: calc(100vh - 60px);}
+#container .contents {display: flex; width: 100%; flex-basis: 90%; background-color: #fff; padding-left: 15.625rem; height: calc(100vh - 60px); flex-direction: column;}
