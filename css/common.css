@@ -29,7 +29,7 @@ button{cursor: pointer; border: 0;}
 /************* TABLE **************/
 
 table {border-collapse: collapse;border-spacing: 2px; width: 100%;}
-img,input{vertical-align:middle;}
+/* img,input{vertical-align:middle;} */
 table ul {margin:0;}
 td	{color:#333;}
 caption, legend {display:none;}
@@ -62,6 +62,7 @@ pre {
 .fblack{color:#000 !important;}
 .bold{ font-weight:600 !important;}
 .f_ns{font-family:'NanumSquare';}	
+.lred{background: linear-gradient(195deg,#ec407a,#d81b60);}
 
 
 .w10{width:10%!important;}
@@ -69,6 +70,7 @@ pre {
 .w15{width:15%!important;}
 .w20{width:20%!important;}
 .w24{width:24%!important;}
+.w25{width: 25% !important;}
 .w30{width:30%!important;}
 .w34{width:34%!important;}
 .w40{width:40%!important;}

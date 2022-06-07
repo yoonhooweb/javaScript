@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    aa();
     let menuCheckli = $(".gnb .depth1");
     let menuCheck = $(".gnb")
     $(menuCheckli).bind({"mouseover" : function(){
@@ -39,6 +38,14 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('active');
 	})
 
+    $("#stDate,#endDate").datepicker({
+        dateFormat: 'yy-mm-dd'
+        ,showOtherMonths: true
+        ,showMonthAfterYear:true
+        ,dayNamesMin: ['일','월','화','수','목','금','토']
+        ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일']
+    });
+
 });
 
 function arrowRotate(){
@@ -62,3 +69,4 @@ function aa(){
         modal.style.display = "none";
     })
 }
+
