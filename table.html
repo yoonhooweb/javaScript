@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS Project</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/webfonts.css">
+    <link rel="stylesheet" href="./css/xeicon.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <h1 class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </h1>
+            <nav class="topNav">
+                <ul class="gnb">
+                    <li class="depth1">
+                        <a href="#">MENU1</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu1SubMenu1SubMenu1SubMenu1SubMenu1SubMenu1</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">MENU2</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu1</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">MENU3</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu1</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">MENU4</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu1</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">MENU5</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu1</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">MENU6</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="util">
+                <ul>
+                    <li class="pointer" onclick="arrowRotate();">
+                        <span class="userArrow">
+                            <img src="./img/profile-1.png" alt="사용자 사진" id="userPic">
+                            <!-- <i class="xi-caret-down-min rotate"></i> -->
+                        </span>
+                        <div class="userInfo">
+                            <!-- <div class="user">
+                                <span class="userName">조윤후</span>
+                                <span class="userdept">선임</span>
+                            </div>
+                            <div class="private">
+                                <span class="myPage">마이페이지</span>
+                                <span class=""></span>
+                            </div>
+                            <button href="#" class="logout bsBt">LOGOUT</button> -->
+                        </div>
+                    </li>
+                    <li>
+                        <span class="searchIcon pointer">
+                            <i class="xi-search"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#" class="menuBt">
+                            <i class="xi-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="container" id="container">
+            <aside class="side-menu">
+                <span class="side-header">
+                    <i class="xi-command mr05"></i>
+                    SideMenu</span>
+                <ul class="side">
+                    <li>
+                        <a href="index.html" class="">
+                            <i class="xi-layout-snb-o"></i>
+                            Dash Board</a>
+                        </li>
+                    <li>
+                        <a href="table.html" class="active">
+                            <i class="xi-border-all"></i>
+                            Table</a>
+                    </li>
+                    <li>
+                        <a href="#" class="d">
+                            <i class="xi-folder-o"></i>
+                            Button</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="contents">
+                <!-- <header class="page-header lred">
+                    <span>Table</span>
+                </header> -->
+                <div class="row">
+                    <div class="tableArea">
+                        <div class="table-search">
+                            <div class="fr">
+                                <input type="text" class="form-control" placeholder="시작날짜" id="stDate">
+                                <span> ~ </span>
+                                <input type="text" class="form-control" placeholder="종료날짜" id="endDate">
+                                <select name="" id="" class="form-control">
+                                    <option value="">제목</option>
+                                    <option value="">작성자</option>
+                                </select>
+                                <input type="text" class="form-control">
+                                <a href="" class="search-bt lblue">검색</a>
+                            </div>
+                        </div>
+                        <div class="table-list">
+                            <table>
+                                <colgroup>
+                                    <col width="5%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <input type="checkbox">
+                                        </th>
+                                        <th>Name</th>
+                                        <th>Title</th>
+                                        <th>Phone Number</th>
+                                        <th>e-mail</th>
+                                        <th>Age</th>
+                                        <th>Button</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr onclick="location.href='./detail.html'">
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>hong gil dong</td>
+                                        <td>sample text</td>
+                                        <td>010-1234-1234</td>
+                                        <td>admin@saysoft.co.kr</td>
+                                        <td>21</td>
+                                        <td>
+                                            <a href="#" class="table-listBt">sample button</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>hong gil dong</td>
+                                        <td>sample text</td>
+                                        <td>010-1234-1234</td>
+                                        <td>admin@saysoft.co.kr</td>
+                                        <td>21</td>
+                                        <td>
+                                            <a href="#" class="table-listBt">sample button</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>hong gil dong</td>
+                                        <td>sample text</td>
+                                        <td>010-1234-1234</td>
+                                        <td>admin@saysoft.co.kr</td>
+                                        <td>21</td>
+                                        <td>
+                                            <a href="#" class="table-listBt">sample button</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>hong gil dong</td>
+                                        <td>sample text</td>
+                                        <td>010-1234-1234</td>
+                                        <td>admin@saysoft.co.kr</td>
+                                        <td>21</td>
+                                        <td>
+                                            <a href="#" class="table-listBt">sample button</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>hong gil dong</td>
+                                        <td>sample text</td>
+                                        <td>010-1234-1234</td>
+                                        <td>admin@saysoft.co.kr</td>
+                                        <td>21</td>
+                                        <td>
+                                            <a href="#" class="table-listBt">sample button</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>hong gil dong</td>
+                                        <td>sample text</td>
+                                        <td>010-1234-1234</td>
+                                        <td>admin@saysoft.co.kr</td>
+                                        <td>21</td>
+                                        <td>
+                                            <a href="#" class="table-listBt">sample button</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>hong gil dong</td>
+                                        <td>sample text</td>
+                                        <td>010-1234-1234</td>
+                                        <td>admin@saysoft.co.kr</td>
+                                        <td>21</td>
+                                        <td>
+                                            <a href="#" class="table-listBt">sample button</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>hong gil dong</td>
+                                        <td>sample text</td>
+                                        <td>010-1234-1234</td>
+                                        <td>admin@saysoft.co.kr</td>
+                                        <td>21</td>
+                                        <td>
+                                            <a href="#" class="table-listBt">sample button</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>hong gil dong</td>
+                                        <td>sample text</td>
+                                        <td>010-1234-1234</td>
+                                        <td>admin@saysoft.co.kr</td>
+                                        <td>21</td>
+                                        <td>
+                                            <a href="#" class="table-listBt">sample button</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>hong gil dong</td>
+                                        <td>sample text</td>
+                                        <td>010-1234-1234</td>
+                                        <td>admin@saysoft.co.kr</td>
+                                        <td>21</td>
+                                        <td>
+                                            <a href="#" class="table-listBt">sample button</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="bt fr lblue mt10">등록</a>
+                            <a href="#" class="modal fr lgreen mt10 bt mr05">모달</a>
+                        </div>
+                        <div class="paging" id="paging">
+                            <ul>
+                                <li><a href="" class="active">1</a></li>
+                                <li><a href="" class="">2</a></li>
+                                <li><a href="" class="">3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="modal" id="modal">
+            <span class="modal-header">
+                <h3>Modal-header</h3>
+                <span class="modal-close">
+                    <i class="xi-close"></i>
+                </span>
+            </span>
+            <div class="modal-body">
+                <div class="modal-left">d</div>
+                <div class="modal-right">d</div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/common.js"></script>
+</body>
+
+</html>

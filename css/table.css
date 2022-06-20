@@ -1,0 +1,12 @@
+.tableArea {padding: 0.625rem 1rem; overflow: hidden; display: flex; width: 100%; flex-direction: column; border: 1px solid #ddd; border-radius: 10px;}
+.table-list {margin-top: 10px;}
+.table-list table {table-layout: fixed;}
+.table-list table thead tr {background: #eaf0f5;}
+.table-list table thead tr th {padding: 0.625rem 0.5rem; color: #627182; text-align: left;}
+.table-list table tbody tr {background-color: #fff; border-bottom: 1px solid #ddd;}
+.table-list table tbody tr td {padding: 0.625rem 0.5rem; color: #627182; text-align: left; font-weight: 500; word-break: break-all;}
+
+.table-detail table {table-layout: fixed;}
+.table-detail table tr {vertical-align: middle; border: 1px solid #ddd;}
+.table-detail table tbody tr th{background-color: #eaf0f5; padding: 0.325rem 0.5rem; vertical-align: middle; font-size: 1.1rem;}
+.table-detail table tbody tr td { padding: 0.325rem; font-size: 1.1rem;}

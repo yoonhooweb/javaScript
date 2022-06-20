@@ -1,0 +1,5 @@
+.form-control {background-color: transparent; border-radius: 5px; border: 1px solid #ddd; padding: 0.325rem 0.7rem; font-size: .8rem;}
+.search-bt { border-radius: 5px; border: 0px solid transparent; font-size: 0.8rem; padding: 0.325rem 0.7rem; color: #fff;} 
+.table-listBt {background-color: #eaf0f5; font-size: 0.8rem; color: #333; padding: 0.325rem 0.625rem; border-radius: 0.8rem; transition: all ease 0.5s;}
+.table-listBt:hover {background-color: #107ccf; color: #fff;}
+.bt {padding: 0.325rem 0.625rem; border-radius: 0.3rem; font-size: 0.725rem; color: #fff; display: inline-block;}

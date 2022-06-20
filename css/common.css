@@ -18,7 +18,7 @@ body {font-size: 16px; -ms-overflow-style: none;}
 
 section, article {display: block;}
 ul {list-style: none;}
-button, input, optgroup, select, textarea {font-family: inherit; font-size: inherit; font-weight: inherit; margin: 0;}
+button, input, optgroup, select, textarea {font-size: inherit; font-weight: inherit; margin: 0;}
 a {text-decoration: none;}
 
 img {font-size: 0; border: 0;}
@@ -60,9 +60,14 @@ pre {
 .fcblue{ color:#107ccf !important;}
 .fcred{ color:#f22f2f !important;}
 .fblack{color:#000 !important;}
+.fwhite{color:#fff !important;}
 .bold{ font-weight:600 !important;}
 .f_ns{font-family:'NanumSquare';}	
 .lred{background: linear-gradient(195deg,#ec407a,#d81b60);}
+.lgreen{background: linear-gradient(195deg,#66bb6a,#43a047);}
+.lblue{background:linear-gradient(195deg,#49a3f1,#1a73e8)}
+.lyellow{background: linear-gradient(195deg,#ffa726,#fb8c00);}
+
 
 
 .w10{width:10%!important;}
@@ -101,14 +106,14 @@ pre {
 .pd30{padding:30px;}
 .pd40{padding:40px;}
 
-.mt02{margin-top:2px;}
-.mt03{margin-top:3px;}
-.mt05{margin-top:5px;}
-.mt10{margin-top:10px;}
-.mt15{margin-top:15px;}
-.mt20{margin-top:20px;}
-.mt30{margin-top:30px;}
-.mt40{margin-top:40px;}
+.mt02{margin-top:2px !important;}
+.mt03{margin-top:3px !important;}
+.mt05{margin-top:5px !important;}
+.mt10{margin-top:10px !important;}
+.mt15{margin-top:15px !important;}
+.mt20{margin-top:20px !important;}
+.mt30{margin-top:30px !important;}
+.mt40{margin-top:40px !important;}
 
 .mb05{margin-bottom:5px;}
 .mb10{margin-bottom:10px;}
@@ -154,8 +159,6 @@ pre {
 
 .pointer{cursor: pointer;}
 .elllipsis{overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
-.fl{float:left;}
-.fr{float:right;}
 .alignL{text-align: left;}
 .alignR{text-align: right;}
 .alignC{text-align: center;}
@@ -163,11 +166,10 @@ pre {
 .dash{display:inline-block; padding:0 4px;}
 .tab-none {display:none;}
 .tab-block {display:block;}
-.textareaNosize{resize: none;}
+.nosize{resize: none;}
 .clear{clear: both;}
 .emp-red{color:red;}
 .bsBt { padding: 5px; font-size: 10px; color: #fff; background-color: #107ccf; border-radius: 5px;}
 
-.flex {flex: 1; max-width: 100%;}
-.double-flex {flex: 1; max-width: 50%;}
-.three-flex {flex:1; max-width: 33%;}
+.flex {display: flex;}
+.flex-wrap {display: flex; flex-wrap: wrap;}

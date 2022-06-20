@@ -12,23 +12,6 @@ $(document).ready(function(){
         }
     });
 
-    $(".sideBarBt").click(function(){
-        if ( $(this).find("i").hasClass("xi-hamburger-back") ) {
-            $(this).find("i").removeClass("xi-hamburger-back");
-            $(this).find("i").addClass("xi-hamburger-out");
-            $(".sideBar").addClass("active");
-            $(".layout-wrap .layout-content").addClass("active");
-            $(".sideBarMenu li a").css("display","none");
-            $(".sideBarMenu li a").addClass("hidden");
-        } else if ($(this).find("i").hasClass("xi-hamburger-out")) {
-            $(this).find("i").addClass("xi-hamburger-back");
-            $(this).find("i").removeClass("xi-hamburger-out");
-            $(".sideBar").removeClass("active");
-            $(".layout-wrap .layout-content").removeClass("active");
-            $(".sideBarMenu li a").fadeIn(500);
-        }
-    })
-
     $('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
 		$('ul.tabs li').removeClass('active');
@@ -61,12 +44,35 @@ function arrowRotate(){
     }
 }
 
+(function () {
+    let modalopen = document.querySelector(".modal");
+    let modalWrap = document.querySelector("#modal");
+    modalopen.addEventListener("click", function(e){
+        e.preventDefault();
+        modalWrap.style.display = "block";
+    });
 
-function aa(){
     let modal = document.querySelector("#modal");
     let close = document.querySelector(".modal-close");
-    close.addEventListener("click",function(){
+    close.addEventListener("click", function(e){
+        e.preventDefault();
         modal.style.display = "none";
-    })
-}
+    });
 
+    let sideBt = document.querySelector(".side li a");
+    sideBt.addEventListener("click", function(e){
+        /* if (sideBt.classList.contains("active")) {
+            sideBt.classList.remove("active");
+        } else {
+            sideBt.classList.add("active");
+        } */
+        e.preventDefault();
+        sideBt.classList.toggle("active");
+    })
+
+    let tableRow = document.querySelector(".addRow");
+    let lastRow = document.querySelector(".table-detail tbody tr:last-child");
+    tableRow.addEventListener("click", function(){
+        lastRow.after("<tr><th>추가된로우tr</th><td>추가된로우td</td></tr>");
+    })
+})();
