@@ -1,4 +1,4 @@
-.tableArea {padding: 0.625rem 1rem; overflow: hidden; display: flex; width: 100%; flex-direction: column; border: 1px solid #ddd; border-radius: 10px;}
+.tableArea {padding: 0.625rem 1rem; display: flex; flex-direction: column; border: 1px solid #ddd; border-radius: 10px;}
 .table-list {margin-top: 10px;}
 .table-list table {table-layout: fixed;}
 .table-list table thead tr {background: #eaf0f5;}

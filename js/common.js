@@ -29,9 +29,20 @@ $(document).ready(function(){
         ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일']
     });
 
+    $(".addRow").click(function(){
+        let html = '';
+        let tbLength = $(".table-detail tr").length;
+        console.log(tbLength);
+        html += '<tr>';
+        html += '<th>추가</th>';
+        html += '<td>추우우우가</td>';
+        html += '</tr>';
+        $(".table-detail tr:last-child").after(html);
+    })
+
 });
 
-function arrowRotate(){
+/* function arrowRotate(){
     let rotate = document.querySelector(".userArrow");
     let userInfo = document.querySelector(".userInfo");
     rotate.classList.toggle("active");
@@ -42,7 +53,7 @@ function arrowRotate(){
         userInfo.style.height = "0px";
         userInfo.style.display = "none";
     }
-}
+} */
 
 (function () {
     let modalopen = document.querySelector(".modal");
@@ -66,13 +77,6 @@ function arrowRotate(){
         } else {
             sideBt.classList.add("active");
         } */
-        e.preventDefault();
         sideBt.classList.toggle("active");
-    })
-
-    let tableRow = document.querySelector(".addRow");
-    let lastRow = document.querySelector(".table-detail tbody tr:last-child");
-    tableRow.addEventListener("click", function(){
-        lastRow.after("<tr><th>추가된로우tr</th><td>추가된로우td</td></tr>");
     })
 })();

@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="./css/webfonts.css">
     <link rel="stylesheet" href="./css/xeicon.min.css">
     <link rel="stylesheet" href="./css/jquery-ui.css">
-    <link rel="stylesheet" href="./css/table.css">
-    <link rel="stylesheet" href="./css/button.css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
 </head>
@@ -102,17 +100,17 @@
                     SideMenu</span>
                 <ul class="side">
                     <li>
-                        <a href="index.html" class="">
+                        <a href="./index.html">
                             <i class="xi-layout-snb-o"></i>
                             Dash Board</a>
                         </li>
                     <li>
-                        <a href="table.html" class="active">
+                        <a href="./table.html" class="">
                             <i class="xi-border-all"></i>
                             Table</a>
                     </li>
                     <li>
-                        <a href="./icon.html" class="d">
+                        <a href="#" class="active">
                             <i class="xi-folder-o"></i>
                             Button / Icon</a>
                     </li>
@@ -124,78 +122,34 @@
                 </ul>
             </aside>
             <section class="contents">
-                <!-- <header class="page-header lred">
-                    <span>Table</span>
-                </header> -->
-                <div class="row">
-                    <div class="tableArea">
-                        <div class="table-detail">
-                            <table>
-                                <colgroup>
-                                    <col width="15%">
-                                    <col width="35%">
-                                    <col width="15%">
-                                    <col width="35%">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <th>이름</th>
-                                        <td>
-                                            <input type="text" class="form-control w100">
-                                        </td>
-                                        <th>체크</th>
-                                        <td>
-                                            <input type="checkbox" name="" id="id1">
-                                            <label for="id1">여성</label>
-                                            <input type="checkbox" name="" id="id2">
-                                            <label for="id2">남성</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>부서</th>
-                                        <td>
-                                            <input type="text" class="form-control w70">
-                                            <a href="#" class="bt lblue addRow">조직도</a>
-                                        </td>
-                                        <th>성별</th>
-                                        <td>
-                                            <input type="radio" name="dd" id="id3">
-                                            <label for="id3">여성</label>
-                                            <input type="radio" name="dd" id="id4">
-                                            <label for="id4">남성</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>비고</th>
-                                        <td colspan="3">
-                                            <textarea name="" id="" cols="30" rows="3" class="form-control nosize w100"></textarea>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>첨부파일</th>
-                                        <td>
-                                            <input type="file" class="form-control">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="fr mt10">
-                                <a href="#" class="bt lred" onclick="location.href='table.html'">취소</a>
-                                <a href="#" class="bt lblue">등록</a>
-                            </div>
-                        </div>
+                <div class="row mt20">
+                    <div class="iconArea">
+                        <ul class="flex">
+                            <li>
+                                <span class="inline icon">
+                                    <i class="xi-home-o"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="inline icon">
+                                    <i class="xi-bars"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="inline icon">
+                                    <i class="xi-bell"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="inline icon">
+                                    <i class="xi-calendar"></i>
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
         </div>
-        <section class="modal" id="modal">
-            <span class="modal-header">
-                <h3>Modal-header</h3>
-                <span class="modal-close">
-                    <i class="xi-close"></i>
-                </span>
-            </span>
-        </section>
     </div>
 
     <script src="./js/common.js"></script>

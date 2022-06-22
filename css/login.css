@@ -1,0 +1,10 @@
+.loginWrap {width: 100%; height: 100%; background-color: #34495e;} 
+.box {width: 50%; padding: 40px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #191919; text-align: center;}
+.box h1{ color: #fff; text-transform:  uppercase; font-weight: 500;}
+.box input[type='text'], .box input[type = 'password']{border: 0; background: none; display: block; margin: 20px auto; text-align: center; border: 2px solid #ec407a; padding: 14px 10px; width: 200px; outline: none; color: #fff; border-radius: 20px; transition: .5s all ease;}
+.box input[type='text']:focus, .box input[type = 'password']:focus {width: 50%;}
+.loginBt {border: 0; background: none; display: block; margin: 20px auto; text-align: center; border: 2px solid #ec407a; padding: 14px 20px; outline: none; color: #fff; border-radius: 20px; cursor: pointer; transition: 0.5s}
+.loginBt:hover {width:40%;}
+.signUp li {display: inline-flex; margin-left: 20px;}
+.signUp li a {color: #fff; font-weight: 300;}
+.signUp li a:hover {text-decoration: underline;}
