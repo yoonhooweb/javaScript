@@ -58,15 +58,13 @@ $(document).ready(function(){
 (function () {
     let modalopen = document.querySelector(".modal");
     let modalWrap = document.querySelector("#modal");
-    modalopen.addEventListener("click", function(e){
-        e.preventDefault();
+    modalopen.addEventListener("click", function(){
         modalWrap.style.display = "block";
     });
 
     let modal = document.querySelector("#modal");
     let close = document.querySelector(".modal-close");
-    close.addEventListener("click", function(e){
-        e.preventDefault();
+    close.addEventListener("click", function(){
         modal.style.display = "none";
     });
 

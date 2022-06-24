@@ -1,5 +1,8 @@
 #wrap {height: auto;}
+#header {box-shadow: 2px 2px 2px #f4f4f4; display: flex; align-items: center; justify-content: space-between;}
 
+#header .header-left ul {display: flex;}
+#header .header-left ul li {}
 
 #modal { width: 70%; height: 70%; background-color: #fff; position: absolute; z-index: 888; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow : 0 0 10px #ddd; border-radius: 10px; display: none;}
 #modal .modal-header {display:flex; padding: 0.625rem 1rem 0rem 1rem; border-bottom: 1px solid #ddd; width: 100%; font-weight: bold; justify-content: space-between;}
