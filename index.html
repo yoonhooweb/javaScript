@@ -20,19 +20,55 @@
         <header class="header" id="header">
             <div class="header-left">
                 <ul>
-                    <li><a href="#"><i class="xi-align-justify"></i></a></li>
-                    <li><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></li>
+                    <li><button class="left-navBt"><i class="xi-align-justify"></i></button></li>
+                    <li><a href="./index.html" class="logo"><img src="./img/logo.png" alt="logo"></a></li>
                 </ul>
             </div>
-            <div class="header-nav">
+            <nav class="header-nav">
 
-            </div>
+            </nav>
             <div class="header-util">
-                <ul>
-                    <li></li>
+                <ul class="util">
+                    <li class="util-li">
+                        <span class="userIcon"><i class="xi-user"></i><i class="userArrow xi-caret-down-min"></i></span>
+                        <article class="userInfo-wrap">
+                            <h5>홍길동님 안녕하세요</h5>
+                            <ul class="user-info">
+                                <li><a href="#">마이페이지</a></li>
+                                <li><a href="#">비밀번호 변경</a></li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="util-li">
+                        <span class="search"><i class="xi-search"></i></span>
+                        <div class="search-box">
+                            <form action="" id="" class="search-form">
+                                <input type="text" class="search-input">
+                                <button class="search-sumbit">Search</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="util-li"><span class="xi-cog"></i></li>
                 </ul>
             </div>
         </header>
+        <aside class="side-nav active">
+            <h4 class="side-title">
+                <i class="xi-bell-o"></i>
+                SideMenu
+            </h4>
+            <ul class="depth1">
+                <li>
+                    <a href="./index.html">
+                        <i class="xi-layout-column"></i><span class="side-name">Dash Board</span>
+                    </a>
+                </li>
+                <li><a href="./table.html"><i class="xi-network-server"></i><span class="side-name">Table</span></a></li>
+            </ul>
+        </aside>
+        <main class="main" id="main">
+            
+        </main>
     </div>
 
     <script src="./js/common.js"></script>

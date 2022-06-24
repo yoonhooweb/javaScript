@@ -1,8 +1,46 @@
 #wrap {height: auto;}
-#header {box-shadow: 2px 2px 2px #f4f4f4; display: flex; align-items: center; justify-content: space-between;}
+/* header 시작 */
+#header { position: fixed; width:100%; top:0; left: 0; z-index: 999; display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 1rem; background-color: #fff; max-height: 3.425rem; border-bottom:1px solid #f4f4f4;/* box-shadow: 2px 2px 2px #f4f4f4; */}
+#header .header-left ul {display: flex; align-items: center; justify-content: center;}
+#header .header-left ul li {display: flex; padding: 0 0.8rem 0 0;}
+#header .header-left ul li .left-navBt {display: block; font-size: 1.4rem; color: #333; background: transparent;}
+#header .header-left ul li .logo img {vertical-align: middle;}
+#header .header-util {display: flex; justify-content: flex-end; padding: 0 0.8rem;}
+#header .header-util .util {display: flex; }
+#header .header-util .util .util-li{display: flex; padding: 0 0.8rem 0 0.3rem; width: 100%; align-items: center; position: relative;}
+#header .header-util .util .util-li span{font-size: 1.2rem; cursor: pointer;}
+#header .header-util .util .util-li .userIcon {position: relative; padding: 0 0.7rem 0 0.3rem;}
+#header .header-util .util .util-li .userArrow {position: absolute; top: 50%; right: -5px; transform: translateY(-50%);}
+#header .header-util .util .util-li .userInfo-wrap {position: absolute; top: 40px; border: 1px solid #ddd; width: 200px; right: 0px; padding: 0.5rem; display: none;}
+#header .header-util .util .util-li .userInfo-wrap .user-info { display: flex; }
+#header .header-util .util .util-li .userInfo-wrap .user-info li{margin:5px 10px 5px 0px;}
+#header .header-util .util .util-li .userInfo-wrap .user-info a{display: block; color: #333; font-size: .8rem; }
+#header .header-util .util .util-li .userInfo-wrap .user-info a:hover{text-decoration: underline;}
+#header .header-util .util .util-li .userInfo-wrap.active {display: block;}
+#header .header-util .util .util-li .search-box {position: absolute; top: 40px; right: 0px; width: 300px; background-color: #fff; box-shadow : 0 0 10px rgb(211, 211, 211); padding: 0.5rem; transition: 0.5s all ease; visibility: hidden; opacity: 0; }
+#header .header-util .util .util-li .search-box.active {visibility: visible; opacity: 1;}
+#header .header-util .util .util-li .search-box .search-form{position: relative; width: 100%; display: flex;}
+#header .header-util .util .util-li .search-box .search-input {border: 1px solid #49a3f1; font-size: 0.8rem; border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; padding: 0.5rem 1rem; outline: none; line-height: 1.5; flex: 1 1 auto;}
+#header .header-util .util .util-li .search-box .search-sumbit {background: #49a3f1; padding: 0.5rem 1rem; text-align: center; font-size: 0.9rem; border: none; color: #fff; font-weight: bold; appearance:none; border-top-right-radius: .25rem; border-bottom-right-radius: .25rem;}
+/* header끝 */
 
-#header .header-left ul {display: flex;}
-#header .header-left ul li {}
+/* sideBar 시작 */
+.side-nav { position: fixed; top: 0; left: 0; width: 200px; height: calc(100vh); background:#002e71; padding-top: 3.425rem; z-index: 888; transition: 0.5s all ease;}
+.side-nav .side-title{ color: #fff; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; padding: 0.5rem;}
+.side-nav .depth1 {overflow: hidden; display: flex; flex-direction: column;}
+.side-nav .depth1 li { padding: 0.8rem; }
+.side-nav .depth1 li a {color: #fff; display: flex; width: 100%; align-items: center;}
+.side-nav .depth1 li i {font-size: 1.2rem;}
+.side-nav .depth1 li .side-name {font-size: 1rem; font-weight: 500; padding-left: 0.5rem;}
+
+.side-nav.active { width: 50px; transition: 0.5s all ease;}
+.side-nav.active .side-title{display: none; transition: 0.5s all ease;}
+.side-nav.active .depth1 li a {justify-content: center; transition: 0.5s all ease;}
+.side-nav.active .depth1 li .side-name {display: none;}
+
+/* sidebar 끝 */
+#main {background: #fff; position: relative;}
+
 
 #modal { width: 70%; height: 70%; background-color: #fff; position: absolute; z-index: 888; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow : 0 0 10px #ddd; border-radius: 10px; display: none;}
 #modal .modal-header {display:flex; padding: 0.625rem 1rem 0rem 1rem; border-bottom: 1px solid #ddd; width: 100%; font-weight: bold; justify-content: space-between;}
@@ -15,18 +53,3 @@
 #paging ul li {display: inline-block; margin: 0 3px 0 0;}
 #paging ul li a { display: block; background-color: #fff; color: #333; padding: 3px 10px; border: 1px solid #ddd;}
 #paging ul li a.active {background-color: #107ccf; color: #fff;}
-
-.side-menu {display: flex;
-    flex-grow: 1;
-    flex-basis: 30%;
-    height: 80%;
-    position: fixed;
-    width: 13.625rem;
-    flex-direction: column;
-    background: linear-gradient(195deg,#42424a,#191919);
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 10px;
-    /* margin: 0px -20px; */
-    left: 10px;
-}
