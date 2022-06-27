@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMS Project</title>
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/webfonts.css">
     <link rel="stylesheet" href="./css/xeicon.min.css">
     <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/media.css">
+    
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
 </head>
@@ -67,11 +70,33 @@
             </ul>
         </aside>
         <main class="main" id="main">
+            <div class="container">
+                <div class="main-header">
+                    <h3>Dash Board</h3>
+                    <div class="header-btn">
+                        <button class="btn btn-border modal-version1">모달</button>
+                        <button class="indigo-btn btn">모달</button>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                </div>
+            </div>
             
+            <!-- 모달 -->
+                <div id="modal" class="modal version-1">
+                    <div class="modal-header">
+                        <h3>Modal-header</h3>
+                        <span class="modal-close"><i class="xi-close"></i></span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-left">d</div>
+                        <div class="modal-right">d</div>
+                    </div>
+                </div>
+            <!-- 모달 끝  -->
         </main>
     </div>
-
-    <script src="./js/common.js"></script>
 </body>
-
+    <script src="./js/common.js"></script>
 </html>

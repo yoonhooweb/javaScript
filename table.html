@@ -7,321 +7,370 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMS Project</title>
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/webfonts.css">
     <link rel="stylesheet" href="./css/xeicon.min.css">
     <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/table.css">
-    <link rel="stylesheet" href="./css/button.css">
+    
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
 </head>
 
 <body>
     <div id="wrap">
-        <header id="header" class="header">
-            <h1 class="logo">
-                <img src="./img/logo.png" alt="logo">
-            </h1>
-            <nav class="topNav">
-                <ul class="gnb">
-                    <li class="depth1">
-                        <a href="#">MENU1</a>
-                        <ul class="depth2">
-                            <li><a href="#">SubMenu1SubMenu1SubMenu1SubMenu1SubMenu1SubMenu1</a></li>
-                        </ul>
-                    </li>
-                    <li class="depth1">
-                        <a href="#">MENU2</a>
-                        <ul class="depth2">
-                            <li><a href="#">SubMenu1</a></li>
-                        </ul>
-                    </li>
-                    <li class="depth1">
-                        <a href="#">MENU3</a>
-                        <ul class="depth2">
-                            <li><a href="#">SubMenu1</a></li>
-                        </ul>
-                    </li>
-                    <li class="depth1">
-                        <a href="#">MENU4</a>
-                        <ul class="depth2">
-                            <li><a href="#">SubMenu1</a></li>
-                        </ul>
-                    </li>
-                    <li class="depth1">
-                        <a href="#">MENU5</a>
-                        <ul class="depth2">
-                            <li><a href="#">SubMenu1</a></li>
-                        </ul>
-                    </li>
-                    <li class="depth1">
-                        <a href="#">MENU6</a>
-                        <ul class="depth2">
-                            <li><a href="#">SubMenu1</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="util">
+        <header class="header" id="header">
+            <div class="header-left">
                 <ul>
-                    <li class="pointer" onclick="arrowRotate();">
-                        <span class="userArrow">
-                            <img src="./img/profile-1.png" alt="사용자 사진" id="userPic">
-                            <!-- <i class="xi-caret-down-min rotate"></i> -->
-                        </span>
-                        <div class="userInfo">
-                            <!-- <div class="user">
-                                <span class="userName">조윤후</span>
-                                <span class="userdept">선임</span>
-                            </div>
-                            <div class="private">
-                                <span class="myPage">마이페이지</span>
-                                <span class=""></span>
-                            </div>
-                            <button href="#" class="logout bsBt">LOGOUT</button> -->
+                    <li><button class="left-navBt"><i class="xi-align-justify"></i></button></li>
+                    <li><a href="./index.html" class="logo"><img src="./img/logo.png" alt="logo"></a></li>
+                </ul>
+            </div>
+            <nav class="header-nav">
+
+            </nav>
+            <div class="header-util">
+                <ul class="util">
+                    <li class="util-li">
+                        <span class="userIcon"><i class="xi-user"></i><i class="userArrow xi-caret-down-min"></i></span>
+                        <article class="userInfo-wrap">
+                            <h5>홍길동님 안녕하세요</h5>
+                            <ul class="user-info">
+                                <li><a href="#">마이페이지</a></li>
+                                <li><a href="#">비밀번호 변경</a></li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="util-li">
+                        <span class="search"><i class="xi-search"></i></span>
+                        <div class="search-box">
+                            <form action="" id="" class="search-form">
+                                <input type="text" class="search-input">
+                                <button class="search-sumbit">Search</button>
+                            </form>
                         </div>
                     </li>
-                    <li>
-                        <span class="searchIcon pointer">
-                            <i class="xi-search"></i>
-                        </span>
-                    </li>
-                    <li>
-                        <a href="#" class="menuBt">
-                            <i class="xi-bars"></i>
-                        </a>
-                    </li>
+                    <li class="util-li"><span class="xi-cog"></i></li>
                 </ul>
             </div>
         </header>
-        <div class="container" id="container">
-            <aside class="side-menu">
-                <span class="side-header">
-                    <i class="xi-command mr05"></i>
-                    SideMenu</span>
-                <ul class="side">
-                    <li>
-                        <a href="./index.html" class="" onclick="console.log('test')">
-                            <i class="xi-layout-snb-o"></i>
-                            Dash Board</a>
-                        </li>
-                    <li>
-                        <a href="./table.html" class="active">
-                            <i class="xi-border-all"></i>
-                            Table</a>
-                    </li>
-                    <li>
-                        <a href="./icon.html" class="d">
-                            <i class="xi-folder-o"></i>
-                            Button / Icon</a>
-                    </li>
-                    <li>
-                        <a href="./login.html" class="">
-                            <i class="xi-user-address"></i>
-                            Login</a>
-                    </li>
-                </ul>
-            </aside>
-            <section class="contents">
-                <!-- <header class="page-header lred">
-                    <span>Table</span>
-                </header> -->
+        <aside class="side-nav">
+            <h4 class="side-title">
+                <i class="xi-bell-o"></i>
+                SideMenu
+            </h4>
+            <ul class="depth1">
+                <li>
+                    <a href="./index.html">
+                        <i class="xi-layout-column"></i><span class="side-name">Dash Board</span>
+                    </a>
+                </li>
+                <li><a href="./table.html"><i class="xi-network-server"></i><span class="side-name">Table</span></a></li>
+            </ul>
+        </aside>
+        <main class="main" id="main">
+            <div class="container">
+                <div class="main-header">
+                    <h3>Table</h3>
+                    <div class="header-btn">
+                        <button class="btn btn-border modal-version1">모달</button>
+                        <button class="indigo-btn btn">모달</button>
+                    </div>
+                </div>
+                
                 <div class="row">
-                    <div class="tableArea">
-                        <div class="table-search">
-                            <div class="fr">
-                                <input type="text" class="form-control" placeholder="시작날짜" id="stDate">
-                                <span> ~ </span>
-                                <input type="text" class="form-control" placeholder="종료날짜" id="endDate">
-                                <select name="" id="" class="form-control">
-                                    <option value="">제목</option>
-                                    <option value="">작성자</option>
-                                </select>
-                                <input type="text" class="form-control">
-                                <a href="" class="search-bt lblue">검색</a>
+                    <div class="tab_area">
+                        <ul class="tabs">
+                            <li data-tab="tab1" class="">테이블 리스트</li>
+                            <li data-tab="tab2" class="active">테이블 세로 스크롤</li>
+                            <li data-tab="tab3" class="">테이블 가로 스크롤</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="tab1" data-tab="1">
+                        <div class="tableArea">
+                            <div class="table-searchArea">
+                                <div>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">10건씩보기</option>
+                                        <option value="">20건씩보기</option>
+                                    </select>
+                                    <span class="table-total ml10">총 1 건 / 20건</span>
+                                </div>
+                                <div class="table-search">
+                                    <select name="" id="" class="form-control mr05">
+                                        <option value="">제목</option>
+                                        <option value="">내용</option>
+                                    </select>
+                                    <input type="text" class="form-control" id="stDate">
+                                    <span class="dash">~</span>
+                                    <input type="text" class="form-control" id="endDate">
+                                    <button class="search-bt btn">검색</button>
+                                </div>
+                            </div>
+                            <div class="table-list">
+                                <table>
+                                    <colgroup>
+                                        <col width="3%">
+                                        <col width="auto;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th><input type="checkbox" name="" id=""></th>
+                                            <th>No.</th>
+                                            <th>Name</th>
+                                            <th>Phone Number</th>
+                                            <th>E-mail</th>
+                                            <th>Age</th>
+                                            <th>File</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" name="" id=""></td>
+                                            <td>1</td>
+                                            <td>Hong Gil Dong</td>
+                                            <td>010-1234-1234</td>
+                                            <td>gildong@saysoft.co.kr</td>
+                                            <td>32</td>
+                                            <td class="alignC">
+                                                <input type="file" class="hidden" id="file">
+                                                <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="" id=""></td>
+                                            <td>1</td>
+                                            <td>Hong Gil Dong</td>
+                                            <td>010-1234-1234</td>
+                                            <td>gildong@saysoft.co.kr</td>
+                                            <td>32</td>
+                                            <td class="alignC">
+                                                <input type="file" class="hidden" id="file">
+                                                <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class="table-list">
-                            <table>
-                                <colgroup>
-                                    <col width="5%">
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            <input type="checkbox">
-                                        </th>
-                                        <th>Name</th>
-                                        <th>Title</th>
-                                        <th>Phone Number</th>
-                                        <th>e-mail</th>
-                                        <th>Age</th>
-                                        <th>Button</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr onclick="location.href='./detail.html'">
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>hong gil dong</td>
-                                        <td>sample text</td>
-                                        <td>010-1234-1234</td>
-                                        <td>admin@saysoft.co.kr</td>
-                                        <td>21</td>
-                                        <td>
-                                            <a href="#" class="table-listBt">sample button</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>hong gil dong</td>
-                                        <td>sample text</td>
-                                        <td>010-1234-1234</td>
-                                        <td>admin@saysoft.co.kr</td>
-                                        <td>21</td>
-                                        <td>
-                                            <a href="#" class="table-listBt">sample button</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>hong gil dong</td>
-                                        <td>sample text</td>
-                                        <td>010-1234-1234</td>
-                                        <td>admin@saysoft.co.kr</td>
-                                        <td>21</td>
-                                        <td>
-                                            <a href="#" class="table-listBt">sample button</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>hong gil dong</td>
-                                        <td>sample text</td>
-                                        <td>010-1234-1234</td>
-                                        <td>admin@saysoft.co.kr</td>
-                                        <td>21</td>
-                                        <td>
-                                            <a href="#" class="table-listBt">sample button</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>hong gil dong</td>
-                                        <td>sample text</td>
-                                        <td>010-1234-1234</td>
-                                        <td>admin@saysoft.co.kr</td>
-                                        <td>21</td>
-                                        <td>
-                                            <a href="#" class="table-listBt">sample button</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>hong gil dong</td>
-                                        <td>sample text</td>
-                                        <td>010-1234-1234</td>
-                                        <td>admin@saysoft.co.kr</td>
-                                        <td>21</td>
-                                        <td>
-                                            <a href="#" class="table-listBt">sample button</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>hong gil dong</td>
-                                        <td>sample text</td>
-                                        <td>010-1234-1234</td>
-                                        <td>admin@saysoft.co.kr</td>
-                                        <td>21</td>
-                                        <td>
-                                            <a href="#" class="table-listBt">sample button</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>hong gil dong</td>
-                                        <td>sample text</td>
-                                        <td>010-1234-1234</td>
-                                        <td>admin@saysoft.co.kr</td>
-                                        <td>21</td>
-                                        <td>
-                                            <a href="#" class="table-listBt">sample button</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>hong gil dong</td>
-                                        <td>sample text</td>
-                                        <td>010-1234-1234</td>
-                                        <td>admin@saysoft.co.kr</td>
-                                        <td>21</td>
-                                        <td>
-                                            <a href="#" class="table-listBt">sample button</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>hong gil dong</td>
-                                        <td>sample text</td>
-                                        <td>010-1234-1234</td>
-                                        <td>admin@saysoft.co.kr</td>
-                                        <td>21</td>
-                                        <td>
-                                            <a href="#" class="table-listBt">sample button</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <a href="#" class="bt fr lblue mt10">등록</a>
-                            <a href="#" class="modal fr lgreen mt10 bt mr05">모달</a>
+                    </div>
+                    <div class="tab-contents active" id="tab3" data-tab="3">
+                        <div class="tableArea">
+                            <div class="table-searchArea">
+                                <div>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">10건씩보기</option>
+                                        <option value="">20건씩보기</option>
+                                    </select>
+                                    <span class="table-total ml10">총 1 건 / 20건</span>
+                                </div>
+                                <div class="table-search">
+                                    <select name="" id="" class="form-control mr05">
+                                        <option value="">제목</option>
+                                        <option value="">내용</option>
+                                    </select>
+                                    <input type="text" class="form-control" id="stDate">
+                                    <span class="dash">~</span>
+                                    <input type="text" class="form-control" id="endDate">
+                                    <button class="search-bt btn">검색</button>
+                                </div>
+                            </div>
+                            
                         </div>
-                        <div class="paging" id="paging">
-                            <ul>
-                                <li><a href="" class="active">1</a></li>
-                                <li><a href="" class="">2</a></li>
-                                <li><a href="" class="">3</a></li>
-                            </ul>
+                    </div>
+                    
+                    <div class="tab-contents " id="tab2" data-tab="2">
+                        <div class="tableArea">
+                            <div class="table-searchArea">
+                                <div>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">10건씩보기</option>
+                                        <option value="">20건씩보기</option>
+                                    </select>
+                                    <span class="table-total ml10">총 1 건 / 20건</span>
+                                </div>
+                                <div class="table-search">
+                                    <select name="" id="" class="form-control mr05">
+                                        <option value="">제목</option>
+                                        <option value="">내용</option>
+                                    </select>
+                                    <input type="text" class="form-control" id="stDate">
+                                    <span class="dash">~</span>
+                                    <input type="text" class="form-control" id="endDate">
+                                    <button class="search-bt btn">검색</button>
+                                </div>
+                            </div>
+                            <div class="table-fixed">
+                                <div class="table-header">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th><input type="checkbox" name="" id=""></th>
+                                                <th>No.</th>
+                                                <th>Name</th>
+                                                <th>Phone Number</th>
+                                                <th>E-mail</th>
+                                                <th>Age</th>
+                                                <th>File</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                                <div class="table-body">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td>1</td>
+                                                <td>Hong Gil Dong</td>
+                                                <td>010-1234-1234</td>
+                                                <td>gildong@saysoft.co.kr</td>
+                                                <td>32</td>
+                                                <td class="alignC">
+                                                    <input type="file" class="hidden" id="file">
+                                                    <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td>1</td>
+                                                <td>Hong Gil Dong</td>
+                                                <td>010-1234-1234</td>
+                                                <td>gildong@saysoft.co.kr</td>
+                                                <td>32</td>
+                                                <td class="alignC">
+                                                    <input type="file" class="hidden" id="file">
+                                                    <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td>1</td>
+                                                <td>Hong Gil Dong</td>
+                                                <td>010-1234-1234</td>
+                                                <td>gildong@saysoft.co.kr</td>
+                                                <td>32</td>
+                                                <td class="alignC">
+                                                    <input type="file" class="hidden" id="file">
+                                                    <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                                </td>
+                                            </tr><tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td>1</td>
+                                                <td>Hong Gil Dong</td>
+                                                <td>010-1234-1234</td>
+                                                <td>gildong@saysoft.co.kr</td>
+                                                <td>32</td>
+                                                <td class="alignC">
+                                                    <input type="file" class="hidden" id="file">
+                                                    <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                                </td>
+                                            </tr><tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td>1</td>
+                                                <td>Hong Gil Dong</td>
+                                                <td>010-1234-1234</td>
+                                                <td>gildong@saysoft.co.kr</td>
+                                                <td>32</td>
+                                                <td class="alignC">
+                                                    <input type="file" class="hidden" id="file">
+                                                    <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                                </td>
+                                            </tr><tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td>1</td>
+                                                <td>Hong Gil Dong</td>
+                                                <td>010-1234-1234</td>
+                                                <td>gildong@saysoft.co.kr</td>
+                                                <td>32</td>
+                                                <td class="alignC">
+                                                    <input type="file" class="hidden" id="file">
+                                                    <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                                </td>
+                                            </tr><tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td>1</td>
+                                                <td>Hong Gil Dong</td>
+                                                <td>010-1234-1234</td>
+                                                <td>gildong@saysoft.co.kr</td>
+                                                <td>32</td>
+                                                <td class="alignC">
+                                                    <input type="file" class="hidden" id="file">
+                                                    <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                                </td>
+                                            </tr><tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td>1</td>
+                                                <td>Hong Gil Dong</td>
+                                                <td>010-1234-1234</td>
+                                                <td>gildong@saysoft.co.kr</td>
+                                                <td>32</td>
+                                                <td class="alignC">
+                                                    <input type="file" class="hidden" id="file">
+                                                    <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td>1</td>
+                                                <td>Hong Gil Dong</td>
+                                                <td>010-1234-1234</td>
+                                                <td>gildong@saysoft.co.kr</td>
+                                                <td>32</td>
+                                                <td class="alignC">
+                                                    <input type="file" class="hidden" id="file">
+                                                    <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td>1</td>
+                                                <td>Hong Gil Dong</td>
+                                                <td>010-1234-1234</td>
+                                                <td>gildong@saysoft.co.kr</td>
+                                                <td>32</td>
+                                                <td class="alignC">
+                                                    <input type="file" class="hidden" id="file">
+                                                    <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td>1</td>
+                                                <td>Hong Gil Dong</td>
+                                                <td>010-1234-1234</td>
+                                                <td>gildong@saysoft.co.kr</td>
+                                                <td>32</td>
+                                                <td class="alignC">
+                                                    <input type="file" class="hidden" id="file">
+                                                    <label for="file" class="fs18"><i class="xi-folder-open"></i></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
-        <section class="modal" id="modal">
-            <span class="modal-header">
-                <h3>Modal-header</h3>
-                <span class="modal-close">
-                    <i class="xi-close"></i>
-                </span>
-            </span>
-            <div class="modal-body">
-                <div class="modal-left">d</div>
-                <div class="modal-right">d</div>
             </div>
-        </section>
+            
+            <!-- 모달 -->
+                <div id="modal" class="modal version-1">
+                    <div class="modal-header">
+                        <h3>Modal-header</h3>
+                        <span class="modal-close"><i class="xi-close"></i></span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-left">d</div>
+                        <div class="modal-right">d</div>
+                    </div>
+                </div>
+            <!-- 모달 끝  -->
+        </main>
     </div>
-
-    <script src="./js/common.js"></script>
 </body>
-
+    <script src="./js/common.js"></script>
 </html>

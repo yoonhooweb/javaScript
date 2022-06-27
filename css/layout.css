@@ -1,6 +1,6 @@
 #wrap {height: auto;}
 /* header 시작 */
-#header { position: fixed; width:100%; top:0; left: 0; z-index: 999; display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 1rem; background-color: #fff; max-height: 3.425rem; border-bottom:1px solid #f4f4f4;/* box-shadow: 2px 2px 2px #f4f4f4; */}
+#header { position: fixed; width:100%; top:0; left: 0; z-index: 999; display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 1rem; background-color: #fff; border-bottom:1px solid #f4f4f4;/* box-shadow: 2px 2px 2px #f4f4f4; */ max-height: 3.313rem}
 #header .header-left ul {display: flex; align-items: center; justify-content: center;}
 #header .header-left ul li {display: flex; padding: 0 0.8rem 0 0;}
 #header .header-left ul li .left-navBt {display: block; font-size: 1.4rem; color: #333; background: transparent;}
@@ -11,7 +11,7 @@
 #header .header-util .util .util-li span{font-size: 1.2rem; cursor: pointer;}
 #header .header-util .util .util-li .userIcon {position: relative; padding: 0 0.7rem 0 0.3rem;}
 #header .header-util .util .util-li .userArrow {position: absolute; top: 50%; right: -5px; transform: translateY(-50%);}
-#header .header-util .util .util-li .userInfo-wrap {position: absolute; top: 40px; border: 1px solid #ddd; width: 200px; right: 0px; padding: 0.5rem; display: none;}
+#header .header-util .util .util-li .userInfo-wrap {position: absolute; top: 40px; border: 1px solid #ddd; width: 200px; right: 0px; padding: 0.5rem; display: none; background-color: #fff;}
 #header .header-util .util .util-li .userInfo-wrap .user-info { display: flex; }
 #header .header-util .util .util-li .userInfo-wrap .user-info li{margin:5px 10px 5px 0px;}
 #header .header-util .util .util-li .userInfo-wrap .user-info a{display: block; color: #333; font-size: .8rem; }
@@ -31,18 +31,27 @@
 .side-nav .depth1 li { padding: 0.8rem; }
 .side-nav .depth1 li a {color: #fff; display: flex; width: 100%; align-items: center; justify-content: center; }
 .side-nav .depth1 li i {font-size: 1.2rem;}
-.side-nav .depth1 li .side-name {font-size: 1rem; font-weight: 500; padding-left: 0.5rem; display: none;}
+.side-nav .depth1 li .side-name {font-size: 1rem; font-weight: 500; padding-left: 0.5rem; display: none; transition: 1s all ease;}
 
-.side-nav.active { width: 200px; transition: 0.5s all ease;}
-.side-nav.active .side-title{display: flex; transition: 0.5s all ease;}
-.side-nav.active .depth1 li a {transition: 0.5s all ease; justify-content: flex-start;}
+.side-nav.active { width: 200px;}
+.side-nav.active .side-title{display: flex;}
+.side-nav.active .depth1 li a {justify-content: flex-start;}
 .side-nav.active .depth1 li .side-name {display: block;}
-
 /* sidebar 끝 */
-#main {background: #fff; position: relative;}
+
+/* main 시작 */
+#main {background: #fff; position: relative; padding-top: 3.313rem; padding-left: 50px; transition: 0.5s all ease;}
+#main.active{padding-left: 200px;}
+#main .container { padding: 1.75rem 2rem;}
+.container .main-header {display: flex; padding: 1rem 0; border-bottom: 1px solid #ddd; margin-bottom: 2rem;}
+.container .row {display: flex; flex-wrap: wrap; flex-direction: column;}
+.container .row .table-searchArea {display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;}
+.container .row .table-searchArea .table-search{display: flex; align-items: center;}
+.container .row .table-searchArea .table-search .dash {margin: 0 0.3rem;}
+/* 메인끝 */
 
 
-#modal { width: 70%; height: 70%; background-color: #fff; position: absolute; z-index: 888; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow : 0 0 10px #ddd; border-radius: 10px; display: none;}
+#modal { width: 70%; height: 70%; background-color: #fff; position: absolute; z-index: 9999; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow : 0 0 10px #ddd; border-radius: 10px; display: none;}
 #modal .modal-header {display:flex; padding: 0.625rem 1rem 0rem 1rem; border-bottom: 1px solid #ddd; width: 100%; font-weight: bold; justify-content: space-between;}
 #modal .modal-close {font-size: 1.5rem;}
 #modal .modal-body {display: flex; justify-content: space-between;}
@@ -53,3 +62,5 @@
 #paging ul li {display: inline-block; margin: 0 3px 0 0;}
 #paging ul li a { display: block; background-color: #fff; color: #333; padding: 3px 10px; border: 1px solid #ddd;}
 #paging ul li a.active {background-color: #107ccf; color: #fff;}
+
+
