@@ -95,9 +95,8 @@ $(document).ready(function(){
 
 (function tableRow(){
     let tableHeader = document.querySelector(".table-header");
-    let tr = document.querySelector(".table-body tbody").clientHeight;
-    console.log(tr > 300);
-    if (tr > 300) {
+    let tbody = document.querySelector(".table-body tbody").clientHeight;
+    if (tbody > 300) {
         tableHeader.style.padding = '0px 20px 0px 0px';
     }
 })();   

@@ -1,6 +1,11 @@
+.container .table-row {display: flex; flex-direction: column;}
+.container .table-row .table-searchArea {display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;}
+.container .table-row .table-searchArea .table-search{display: flex; align-items: center;}
+.container .table-row .table-searchArea .table-search .dash {margin: 0 0.3rem;}
+
 /* table-list  */
 .tableArea {padding: 0.625rem 0rem; display: flex; flex-direction: column;}
-.tableArea table {width: 100%; table-layout: fixed;}
+.tableArea table {table-layout: fixed; width: 100%;}
 .tableArea .table-list table thead {border-top: 1px solid #d9dfe8; border-bottom: 1px solid #d9dfe8; background-color: #fff;}
 .tableArea .table-list table thead th {padding: 0.7rem 0.7rem;}
 .tableArea .table-list table tbody {border-bottom: 1px solid #d9dfe8;}
@@ -18,3 +23,13 @@
 .tableArea .table-fixed .table-body tbody tr:nth-child(odd) { background-color: #f7f9fc;}
 .tableArea .table-fixed .table-body tbody tr:nth-child(even) { background-color: #fff;}
 .tableArea .table-fixed .table-body tbody td { padding: 0.7rem 0.7rem; font-weight: 100; text-align: center;}
+
+/* table-xscroll */
+.tableArea .table-xScroll { width: 100%; overflow-x: auto; overflow-y: hidden;}
+.tableArea .table-xScroll table { table-layout: auto; width: 5000px;}
+.tableArea .table-xScroll table thead {border-top: 1px solid #d9dfe8; border-bottom: 1px solid #d9dfe8; background-color: #fff;}
+.tableArea .table-xScroll table thead th {padding: 0.7rem 0.7rem;}
+.tableArea .table-xScroll table tbody {border-bottom: 1px solid #d9dfe8;}
+.tableArea .table-xScroll table tbody tr:nth-child(odd) { background-color: #f7f9fc;}
+.tableArea .table-xScroll table tbody tr:nth-child(even) { background-color: #fff;}
+.tableArea .table-xScroll table tbody td { padding: 0.7rem 0.7rem; font-weight: 100; text-align: center;}

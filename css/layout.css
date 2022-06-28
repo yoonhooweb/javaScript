@@ -1,4 +1,4 @@
-#wrap {height: auto;}
+#wrap {width:100%; height: auto; overflow: hidden;}
 /* header 시작 */
 #header { position: fixed; width:100%; top:0; left: 0; z-index: 999; display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 1rem; background-color: #fff; border-bottom:1px solid #f4f4f4;/* box-shadow: 2px 2px 2px #f4f4f4; */ max-height: 3.313rem}
 #header .header-left ul {display: flex; align-items: center; justify-content: center;}
@@ -43,11 +43,9 @@
 #main {background: #fff; position: relative; padding-top: 3.313rem; padding-left: 50px; transition: 0.5s all ease;}
 #main.active{padding-left: 200px;}
 #main .container { padding: 1.75rem 2rem;}
-.container .main-header {display: flex; padding: 1rem 0; border-bottom: 1px solid #ddd; margin-bottom: 2rem;}
-.container .row {display: flex; flex-wrap: wrap; flex-direction: column;}
-.container .row .table-searchArea {display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;}
-.container .row .table-searchArea .table-search{display: flex; align-items: center;}
-.container .row .table-searchArea .table-search .dash {margin: 0 0.3rem;}
+.container .main-header {display: flex; padding: 1rem 0; border-bottom: 1px solid #ddd; margin-bottom: 2rem; align-items: center;}
+.container .row {display: flex; flex-wrap: wrap;}
+
 /* 메인끝 */
 
 
