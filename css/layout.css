@@ -1,4 +1,4 @@
-#wrap {width:100%; height: auto; overflow: hidden;}
+#wrap {width:100%; height: auto;}
 /* header 시작 */
 #header { position: fixed; width:100%; top:0; left: 0; z-index: 999; display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 1rem; background-color: #fff; border-bottom:1px solid #f4f4f4;/* box-shadow: 2px 2px 2px #f4f4f4; */ max-height: 3.313rem}
 #header .header-left ul {display: flex; align-items: center; justify-content: center;}
@@ -40,14 +40,29 @@
 /* sidebar 끝 */
 
 /* main 시작 */
-#main {background: #fff; position: relative; padding-top: 3.313rem; padding-left: 50px; transition: 0.5s all ease;}
+#main {background: #fff; position: relative; padding-top: 3.313rem; padding-left: 50px; transition: 0.5s all ease; overflow-x: hidden;}
 #main.active{padding-left: 200px;}
 #main .container { padding: 1.75rem 2rem;}
-.container .main-header {display: flex; padding: 1rem 0; border-bottom: 1px solid #ddd; margin-bottom: 2rem; align-items: center;}
-.container .row .card-box{display: flex; flex-wrap: wrap;}
-.container .row .card-wrap {width: 100%; display: flex;}
-.container .row .card-6 > * {width: 16.666667%;}
-.container .row .card { display: flex; word-break: break-all; border:1px solid #ddd; border-radius: 5px; padding-left: 0.325rem; padding-right: 0.325rem;}
+.container .main-header {display: flex; padding: 1rem 0; border-bottom: 1px solid #ddd; margin-bottom: 2rem; align-items: center; justify-content: space-between}
+.container .main-body {overflow: hidden;}
+.container .row { display: flex; flex-wrap: wrap; margin-bottom: 1rem;}
+.container .row .card-6 {width: 16.666667%;}
+.container .row .card-5 {width: 20%;}
+.container .row .card-4 {width: 25%;}
+.container .row .card-3 {width: 33.333333%;}
+.container .row .card-2 {width: 50%;}
+.container .row .card-1 {width: 100%;}
+.container .row .card-box{padding: 0 1rem;}
+.container .row .card {position: relative; display: flex; word-break: break-all; word-wrap: break-word; padding-left: 0.325rem; padding-right: 0.325rem; flex-direction: column; background-color: #fff; border: 1px solid #ddd; box-shadow: 1px 2px 3px 0px #ddd;}
+.container .row .card-header{display: flex; justify-content: space-between; align-items: center; width: 100%; color: #333; padding: 0.525rem 0; font-weight: 500; border-bottom: 2px solid #002e71 /* border-top-left-radius: 10px; border-top-right-radius: 10px; */ }
+.container .row .card-header .portlet-bt { font-size: 1.4rem;}
+.container .row .card-body {padding: 0.525rem 0; font-weight: 100;}
+.container .row .card-body .card-notice { width: 100%; display: block;}
+.container .row .card-body .card-notice li{display: flex; justify-content: space-between; align-items: center; position: relative; padding: 0.525rem 0 0.525rem 20px}
+.container .row .card-body .card-notice li::before {content: ''; position: absolute; top: 50%; left: 10px; transform: translateY(-50%); width: 5px; height: 5px; border-radius: 50%; background-color: #002e71;}
+.container .row .card-body .card-notice li .portlet-txt {display: block; font-size: 0.9rem; color: #333; width: 80%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.container .row .card-body .card-notice li .portlet-txt:hover {text-decoration: underline;}
+.container .row .card-body .card-notice li .portlet-date {font-size: 0.8rem; color: #747474;}
 /* 메인끝 */
 
 

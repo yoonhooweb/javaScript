@@ -14,7 +14,7 @@
 .tableArea .table-list table tbody td { padding: 0.7rem 0.7rem; font-weight: 100; text-align: center;}
 
 /* table-headerfixed */
-.tableArea .table-fixed {padding-top: 45px; position: relative;}
+.tableArea .table-fixed {padding-top: 45px; position: relative; overflow: hidden;}
 .tableArea .table-fixed .table-header {position: absolute; top: 0; left: 0; background-color: #fff; }
 .tableArea .table-fixed .table-header thead {border-top: 1px solid #d9dfe8; border-bottom: 1px solid #d9dfe8; background-color: #fff;}
 .tableArea .table-fixed .table-header thead th {padding: 0.7rem;}
