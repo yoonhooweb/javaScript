@@ -8,7 +8,7 @@ $(document).ready(function(){
         ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일']
     });
 
-    $('ul.tabs li').click(function(){
+    /* $('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
         console.log(tab_id);
 		$('ul.tabs li').removeClass('active');
@@ -16,10 +16,24 @@ $(document).ready(function(){
 
 		$(this).addClass('active');
 		$("#"+tab_id).addClass('active');
-	});
+	}); */
 });
 
 (function(){
+    let tabs = document.querySelectorAll("ul.tabs li");
+    let contents = document.querySelector(".tab-contents");
+    for (var i = 0; i < tabs.length; i++) {
+        let tabId = tabs[i].getAttribute('data-tab');
+        tabs[i].addEventListener("click",function(){
+            for (var j = 0; j < tabs.length; j++) {
+                tabs[j].classList.remove("active");
+                contents[j].classList.remove("active");
+            }
+        })
+        
+    }
+
+
     let main = document.querySelector("#main");
     let sideBt = document.querySelector(".left-navBt");
     let side = document.querySelector(".side-nav");
