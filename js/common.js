@@ -10,6 +10,7 @@ $(document).ready(function(){
 
     $('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
+        console.log(tab_id);
 		$('ul.tabs li').removeClass('active');
 		$('.tab-contents').removeClass('active');
 
@@ -18,12 +19,37 @@ $(document).ready(function(){
 	});
 });
 
+(function(){
+    let main = document.querySelector("#main");
+    let sideBt = document.querySelector(".left-navBt");
+    let side = document.querySelector(".side-nav");
+    let getClass = localStorage.getItem("active");
+    sideBt.addEventListener("click",function(){
+        if ( side.classList.contains("active") ) {
+            localStorage.removeItem(getClass);
+            side.classList.remove("active");
+            main.classList.remove("active");
+        } else {
+            let setClass = localStorage.setItem("active", "active");
+            side.classList.add("active");
+            main.classList.add("active");
+        }
+    })
+
+    if (localStorage.getItem("active") == 'active') {
+        side.classList.add("active");
+        main.classList.add("active");
+    } else if (localStorage.getItem("active") == null && localStorage.getItem("active") == false) {
+        side.classList.remove("active");
+        main.classList.remove("active");
+    }
+})();
+
 (function userInfo() {
     let userIcon = document.querySelector(".userIcon");
     let userBox = document.querySelector(".userInfo-wrap");
     let arrow = document.querySelector(".userArrow");
     userIcon.addEventListener("click",function(){
-        console.log("test");
         if (userBox.classList.contains('active')) {
             userBox.classList.remove('active');
             arrow.classList.add('xi-caret-down-min');
@@ -45,39 +71,27 @@ $(document).ready(function(){
     });
 })();
 
-/* function leftBt() {
-    let sideBt = document.querySelector(".left-navBt");
-    let side = document.querySelector(".side-nav");
-    let active = sessionStorage.getItem("active");
-    sideBt.addEventListener("click",function(){
-        sessionStorage.removeItem(active);
-        if ( side.classList.contains(active) ) {
-            side.classList.remove(active);
-            sessionStorage.removeItem(active);
-        } else {
-            sessionStorage.setItem("active" , "active");
-            side.classList.add(active);
-
-        }
-
-    })
-} */
-
-(function leftBt() {
+/* (function leftBt() {
+    let ACTIVECLASS = "active";
     let main = document.querySelector("#main");
     let sideBt = document.querySelector(".left-navBt");
     let side = document.querySelector(".side-nav");
+    let getClass = localStorage.getItem(ACTIVECLASS);
     sideBt.addEventListener("click",function(){
         if ( side.classList.contains("active") ) {
+            localStorage.removeItem(getClass);
             side.classList.remove("active");
             main.classList.remove("active");
         } else {
-            side.classList.add("active");
-            main.classList.add("active");
+            let setClass = localStorage.setItem(ACTIVECLASS, "active");
+            side.classList.add(ACTIVECLASS);
+            main.classList.add(ACTIVECLASS);
         }
-
     })
-})();
+
+})(); */
+
+
 
 (function modalVersion1(){
     let modalopen = document.querySelector(".modal-version1");
