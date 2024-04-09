@@ -5,3 +5,7 @@ if (a === 10) {
 } else {
     console.log("아니다");
 }
+
+let today = new Date();
+
+console.log(today);
