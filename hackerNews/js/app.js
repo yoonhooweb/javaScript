@@ -17,7 +17,7 @@ function newsFeed() {
 
     newsList.push("<ul>");
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < newsFeed.length; i++) {
         newsList.push(`
       <li>
         <a href="#${newsFeed[i].id}">
