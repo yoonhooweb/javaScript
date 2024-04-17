@@ -28,12 +28,12 @@ function newsFeed() {
     }
 
     newsList.push("</ul>");
-
+    console.log(newsList);
     container.innerHTML = newsList.join("");
 }
 
 function newsDetail() {
-    const id = location.hash.substr(1);
+    const id = location.hash.substring(1);
     const newsContent = getData(CONTENT_URL.replace("@id", id));
 
     container.innerHTML = `
