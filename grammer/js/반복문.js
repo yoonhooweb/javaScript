@@ -43,7 +43,7 @@ for (let index in arr) {
 const obj = {
     color : "red",
     width : 200,
-    height : 200,
+    height : 40,
 }
 
 for (let key in obj) {
