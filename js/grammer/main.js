@@ -1,13 +1,9 @@
-function sum( ) {
-    return console.log(arguments);
-} 
+const userName = {
+    firstName : 'Jo',
+    lastName : 'YoonHoo',
+    getName : function (){ 
+        return `${this.firstName} ${this.lastName}`
+    },
+};
 
-sum(1,5);
-
-
-let x  = 6;
-let functionName = (v) => {
-     return v * 2
-}
-
-console.log(`functionName : ${functionName(x)}`);
+console.log(userName.getName());
