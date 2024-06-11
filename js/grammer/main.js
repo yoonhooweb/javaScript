@@ -7,5 +7,3 @@ const userName = {
 };
 
 console.log(userName.getName());
-
-ㅇ
