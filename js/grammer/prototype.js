@@ -1,3 +1,8 @@
+/* 
+    prototype에서 지정한 메소드는 메모리에 딱 한번만 만들어진다.
+    그것을 이 앞에 있는 생성자가 new라는 키워드로 만들어내는 인스턴스에서 사용할 수 있다.
+*/
+
 const userName = {
     firstName : 'Jo',
     lastName : 'YoonHoo',
