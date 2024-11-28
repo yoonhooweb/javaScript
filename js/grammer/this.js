@@ -28,7 +28,7 @@ const timer = {
         // setTimeout(함수, 시간);
         setTimeout(() => {
             console.log(this.name)
-        }, 2000)
+        }, 2000) 
     }
 }
 
