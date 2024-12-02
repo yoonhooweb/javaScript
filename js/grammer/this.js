@@ -23,7 +23,7 @@ console.log(yoonhoo.arrow());
 
 
 const timer = {
-    name : 'yoonhoo',
+    name : 'yoonhoo222',
     timeout : function (){
         // setTimeout(함수, 시간);
         setTimeout(() => {
