@@ -13,7 +13,7 @@ console.log(tdst.getFullName()); */
 
 /* 
     constructor 라는 내부 함수를 사용해서 값을 받아야한다.
-    constructor(first, last) : function(){} 라는 문법이랑 동일
+    constructor(first, last){} : function(first, last){} 라는 문법이랑 동일
 */
 class User {
     constructor(first, last) {
