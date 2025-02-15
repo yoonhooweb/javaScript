@@ -6,7 +6,10 @@ let txt = 'hello world!';
 
 let result = txt.indexOf('world');
 
+let re = txt.replace("world","월드");
+
 console.log(result); // 6
+console.log(re);
 
 const str = '0123';
 
@@ -30,3 +33,4 @@ console.log(txt.replace(" world!", "월드~"));
 let email = "showil20@naver.com"
 
 console.log(email.match(/.+(?=@)/)[0]);
+

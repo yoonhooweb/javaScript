@@ -37,4 +37,6 @@ console.log('ceil :', Math.ceil(3.14));  //올림처리 자바스크립트는 �
 console.log('floor :', Math.floor(3.14)); // 내림처리
 console.log('round :', Math.round(3.14)); // 반올림
 console.log('random :', Math.random()); //랜덤
-console.log('random :', Math.floor(Math.random() * 50)); //랜덤
+console.log('random :', Math.floor(Math.random() * 45)); //랜덤
+
+

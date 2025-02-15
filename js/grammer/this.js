@@ -4,7 +4,7 @@
     화살표(arrow) 함수는 자신이 선언된 함수 범위에서 this 정의
 */
 
-function User (name) {
+function User (name) { //파스칼케이스로 만들어 졌으니 생성자 함수로 생각할 수 있다.
     this.name = name;
 }
 
@@ -29,7 +29,13 @@ const timer = {
         setTimeout(() => {
             console.log(this.name)
         }, 2000) 
+    },
+    timein : () => {
+        setTimeout( () => {
+            console.log("타임in", console.log(this.name));
+        }, 3000 )
     }
 }
 
 timer.timeout();
+timer.timein();

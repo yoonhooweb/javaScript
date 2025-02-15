@@ -20,6 +20,7 @@ class Vehicle {
 
 const MyVehicle = new Vehicle("운송수단" , 4); 
 console.log(MyVehicle);
+console.log(MyVehicle.name);
 console.log(MyVehicle.vehicleRandom());
 
 class Bicycle extends Vehicle {
