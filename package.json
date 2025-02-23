@@ -1,0 +1,20 @@
+{
+  "name": "javascript-1",
+  "version": "22.14.0",
+  "description": "javascript공부 및 개인템플릿 만들기",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoonhooweb/javaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoonhooweb/javaScript/issues"
+  },
+  "homepage": "https://github.com/yoonhooweb/javaScript#readme",
+  "type": "module"
+}
