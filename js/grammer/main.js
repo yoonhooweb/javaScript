@@ -1,6 +1,5 @@
 import { mathMax } from './export.js';
 import random from './export.js';
-import axios from 'axios';
 
 console.log(random());
 console.log(mathMax(1,2)); // 2
@@ -13,4 +12,4 @@ function fetchMovies() {
         })
 }
 
-fetchMovies()
+fetchMovies();
