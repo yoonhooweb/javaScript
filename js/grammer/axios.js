@@ -42,3 +42,21 @@ function fetchMovies() {
 }
 
 fetchMovies();
+
+
+function axiosTest() {
+    axios.get('js/test.json')
+    .then( (response ) => { 
+        console.log(response);
+        console.log(response.data);
+        response.data.members.forEach ( (v) => {
+            console.log(`나이는 ${v.age} 이고 이름은 ${v.name} 이다.`);
+        })
+    })
+    .catch ( () => {
+
+    })
+    
+}
+
+axiosTest();
